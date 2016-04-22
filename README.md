@@ -6,13 +6,11 @@ We intend to build this Cheat Sheet more assessable and user friendly, you can v
 
 ### Live Version Here:
 
-* English: https://drupalconsole.com/cheatsheet/en
-
+* English: N/A
 
 ## ScreenShots
 
-![](http://ww3.sinaimg.cn/large/76dc7f1bjw1f2mqhtw9v6j21bs10m7fs.jpg)
+<!-- ![](http://ww3.sinaimg.cn/large/76dc7f1bjw1f2mqhtw9v6j21bs10m7fs.jpg) -->
 
-## Based on
-
+## Based on the laravel5-cheatsheet
 https://github.com/Aufree/laravel5-cheatsheet
