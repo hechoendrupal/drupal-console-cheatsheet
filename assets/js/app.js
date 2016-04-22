@@ -1,12 +1,11 @@
 $(function(){
-
 	// Allow the user to turn comments off
 	$('.comments-toggle').on('click', function(event){
 		$('span.com').toggle();
 		$('.grid').masonry();
 	});
 
-	// Call prettprint manually
+	// Call prettyprint manually
 	prettyPrint();
 
 	// To the top functionality
@@ -110,7 +109,4 @@ $(function(){
   }
 
 	initExternalLink();
-
-
 });
-
