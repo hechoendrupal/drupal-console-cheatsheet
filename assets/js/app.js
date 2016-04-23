@@ -12,14 +12,23 @@ $(function(){
 
 // Read data
 function loadCommands(language) {
+	$(".languages").empty();
+	$('.grid').empty();
+	$('.active-link').removeClass('active-link');
+	$('.focus-code').remove();
+	$('.grid').fadeIn('slow');
+	$('[data-close]').trigger('click');
+	$(".sidebar-menu").empty();
+	location.hash = '';
+
 	if(!language) {
 		language = 'en';
 	}
-	$.getJSON( "languages/"+language+".json", function( data ) {
+
+	$.getJSON( "languages/"+language+".json", function(data) {
 		var languages = data.application.languages;
 		var namespaces = data.commands;
-		$(".languages").empty();
-		$(".sidebar-menu").empty();
+
 		$.each(languages, function(key, value) {		
 			var template = document.getElementById('language').innerHTML;
 			var languageLi = Mustache.render(
@@ -30,7 +39,6 @@ function loadCommands(language) {
 			$(languageLi).appendTo(".languages");
 		});
 
-		$(".grid").empty();
 		$.each(namespaces, function(namespace, commands) {
 			renderNamespace(namespace, commands);
 		});
