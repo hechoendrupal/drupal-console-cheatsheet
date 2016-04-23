@@ -102,7 +102,7 @@ pre .lit {
   color: #cd5c5c;
 }
 pre .pun, pre .opn, pre .clo {
-  color: #ffffff;
+  color: #333;
 }
 pre .tag {
   color: #4bb1b1;
