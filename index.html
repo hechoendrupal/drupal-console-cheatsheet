@@ -107,13 +107,16 @@
 
       <script type="x-tmpl-mustache" id="command">
 <section class="cmd-description grid-item">
-  <h4><a name="generate" href="#{{namespace}}">{{namespace}}</a> <a href="" title=""><i class="icon-file-text"></i></a></h4>
-    <pre class="prettyprint lang-php">
+  <h4>
+    <a name="{{namespace}}" href="#{{namespace}}">{{namespace}}</a>
+    <a href="" title=""><i class="icon-file-text"></i></a>
+  </h4>
+<pre class="prettyprint lang-php">
 {{#commands}}
 // {{description}}
 $ drupal {{name}}
 {{/commands}}
-    </pre>
+</pre>
 </section>
       </script>
       <script type="text/javascript" src="assets/js/jquery.js"></script>
