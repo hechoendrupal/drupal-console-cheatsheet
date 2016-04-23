@@ -154,7 +154,8 @@ ul {
   margin-top: 20px;
   margin-left: 10px;
 }
-ul.sidebar-menu li {
+ul.sidebar-menu li,
+ul.sidebar-top li {
   float: left;
   margin: 3px;
   font-size: 13px;
@@ -182,19 +183,22 @@ hr.horizonal-line {
 li.social-icon a:hover {
   color: none;
 }
-.sidebar-menu a {
+.sidebar-menu a,
+.sidebar-top a {
   color: #0594d3;
   border-radius: 4px;
   border: 1px solid #0594d3;
   padding: 2px 4px;
 }
-.sidebar-menu a.active-link {
+.sidebar-menu a.active-link, 
+.sidebar-top  a.active-link {
   color: #0594d3;
 }
 .mobile-cmd-cell a.active-link {
   color: #333;
 }
-.sidebar-menu a:hover {
+.sidebar-menu a:hover, 
+.sidebar-top  a:hover {
   color: #0594d3;
 }
 .avatar {

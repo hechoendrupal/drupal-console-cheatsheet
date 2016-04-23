@@ -1,0 +1,4677 @@
+{
+    "commands": {
+        "none": [
+            {
+                "name": "about",
+                "description": "Afi\u0219eaz\u0103 informa\u021biile de baz\u0103 despre proiectul Drupal Console",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "about",
+                "dashed": "about",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "chain",
+                "description": "Execu\u021bie comand\u0103 \u00eenl\u0103n\u021buit\u0103",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Fi\u015fier definit de utilizator ce con\u0163ine comenzi care urmeaz\u0103 s\u0103 fie executate."
+                    },
+                    "placeholder": {
+                        "name": "placeholder",
+                        "description": "commands.chain.options.placeholder"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "chain",
+                "dashed": "chain",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "check",
+                "description": "commands.check.description",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "check",
+                "dashed": "check",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "help",
+                "description": "Displays help for a command",
+                "options": {
+                    "xml": {
+                        "name": "xml",
+                        "description": "To output list as XML"
+                    },
+                    "raw": {
+                        "name": "raw",
+                        "description": "To output raw command list"
+                    },
+                    "format": {
+                        "name": "format",
+                        "description": "The output format (txt, xml, json, or md)"
+                    }
+                },
+                "arguments": {
+                    "command_name": {
+                        "name": "command_name",
+                        "description": "The command name"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "help",
+                "dashed": "help",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "init",
+                "description": "commands.init.description",
+                "options": {
+                    "override": {
+                        "name": "override",
+                        "description": "commands.init.options.override"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "init",
+                "dashed": "init",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "list",
+                "description": "Listele de comenzi",
+                "options": {
+                    "xml": {
+                        "name": "xml",
+                        "description": "Afi\u0219area listei ca XML"
+                    },
+                    "raw": {
+                        "name": "raw",
+                        "description": "Afi\u0219area brut\u0103 a listei de comenzi"
+                    },
+                    "format": {
+                        "name": "format",
+                        "description": "Formatul de afi\u0219are (txt, xml, json, sau md)"
+                    }
+                },
+                "arguments": {
+                    "namespace": {
+                        "name": "namespace",
+                        "description": "Numele spa\u021biului de lucru"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "list",
+                "dashed": "list",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "self-update",
+                "description": "Actualizeaz\u0103 Consola la ultima versiune.",
+                "options": {
+                    "major": {
+                        "name": "major",
+                        "description": "Update to a new major version, if available."
+                    },
+                    "manifest": {
+                        "name": "manifest",
+                        "description": "Override the manifest file path."
+                    },
+                    "current-version": {
+                        "name": "current-version",
+                        "description": "Override the version to update from."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "self-update",
+                "dashed": "self-update",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "server",
+                "description": "Runs PHP built-in web server",
+                "options": [],
+                "arguments": {
+                    "address": {
+                        "name": "address",
+                        "description": "The address:port values"
+                    }
+                },
+                "examples": [
+                    {
+                        "description": "Run using default address argument value 127.0.0.1.8088",
+                        "execution": "drupal server"
+                    },
+                    {
+                        "description": "Passing address argument to use a different port number",
+                        "execution": "drupal server 127.0.0.1:8089"
+                    },
+                    {
+                        "description": "Running default address argument values, using --root option to define the Drupal root",
+                        "execution": "drupal --root=\/var\/www\/drupal8.dev server"
+                    }
+                ],
+                "aliases": [],
+                "key": "server",
+                "dashed": "server",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "cache": [
+            {
+                "name": "cache:rebuild",
+                "description": "Reconstrui\u021bi \u0219i cur\u0103\u021ba\u021bi tot cache-ul.",
+                "options": [],
+                "arguments": {
+                    "cache": {
+                        "name": "cache",
+                        "description": "Cur\u0103\u021ba\u021bi doar cache-ul specificat."
+                    }
+                },
+                "examples": [
+                    {
+                        "description": "Reconstrui\u021bi tot cache-ul",
+                        "execution": "drupal cr all"
+                    },
+                    {
+                        "description": "Reconstrui\u021bi discovery cache",
+                        "execution": "drupal cr discovery"
+                    }
+                ],
+                "aliases": [
+                    "cr"
+                ],
+                "key": "cache.rebuild",
+                "dashed": "cache-rebuild",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "chain": [
+            {
+                "name": "chain:debug",
+                "description": "List available chain files.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "chain.debug",
+                "dashed": "chain-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "config": [
+            {
+                "name": "config:debug",
+                "description": "Afi\u0219eaz\u0103 configurarea curent\u0103.",
+                "options": [],
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Numele configur\u0103rii."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cde"
+                ],
+                "key": "config.debug",
+                "dashed": "config-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:delete",
+                "description": "Delete configuration",
+                "options": [],
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Configuration name."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "config.delete",
+                "dashed": "config-delete",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:diff",
+                "description": "Ouput configuration items that are different in active configuration compared with a directory.",
+                "options": {
+                    "reverse": {
+                        "name": "reverse",
+                        "description": "See the changes in reverse (i.e diff a directory to the active configuration)."
+                    }
+                },
+                "arguments": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "The directory to diff against. If omitted, choose from Drupal config directories."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "config.diff",
+                "dashed": "config-diff",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:edit",
+                "description": "Editeaz\u0103 configurarea selectat\u0103.",
+                "options": [],
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Numele configur\u0103rii."
+                    },
+                    "editor": {
+                        "name": "editor",
+                        "description": "Editor."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cdit"
+                ],
+                "key": "config.edit",
+                "dashed": "config-edit",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:export",
+                "description": "Export\u0103 configur\u0103rile curente ale aplica\u021biei.",
+                "options": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "Indic\u0103 calea de salvare pentru configur\u0103rile exportate."
+                    },
+                    "tar": {
+                        "name": "tar",
+                        "description": "If set, the configuration will be exported to an archive file."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ce"
+                ],
+                "key": "config.export",
+                "dashed": "config-export",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:export:content:type",
+                "description": "Export\u0103 un anumit tip de con\u021binut \u0219i c\u00e2mpurile aferente.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "optional-config": {
+                        "name": "optional-config",
+                        "description": "Export\u0103 tipul de con\u021binut ca un fi\u0219ier op\u021bional de configurare YAML \u00een modulul t\u0103u"
+                    }
+                },
+                "arguments": {
+                    "content-type": {
+                        "name": "content-type",
+                        "description": "Content Type to be exported"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cect"
+                ],
+                "key": "config.export.content.type",
+                "dashed": "config-export-content-type",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:export:single",
+                "description": "Export\u0103 o singur\u0103 configurare ca fi\u0219ier YAML.",
+                "options": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "Indic\u0103 calea de salvare pentru configur\u0103rile exportate."
+                    },
+                    "include-dependencies": {
+                        "name": "include-dependencies",
+                        "description": "Export dependencies of the configuration as well."
+                    }
+                },
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Numele configur\u0103rii."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ces"
+                ],
+                "key": "config.export.single",
+                "dashed": "config-export-single",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:export:view",
+                "description": "Export\u0103 un view \u00een format YAML \u00een cadrul unui modul pentru a fi reutilizat \u00eentr-un alt website.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "optional-config": {
+                        "name": "optional-config",
+                        "description": "Export\u0103 view-ul ca un fi\u0219ier de configurare YAML \u00een modul"
+                    },
+                    "include-module-dependencies": {
+                        "name": "include-module-dependencies",
+                        "description": "Include dependin\u021bele modulului \u00een fi\u0219ierul info YAML"
+                    }
+                },
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "View ID"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cev"
+                ],
+                "key": "config.export.view",
+                "dashed": "config-export-view",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:import",
+                "description": "Import\u0103 configurarea pentru aplica\u021bia curent\u0103.",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Calea c\u0103tre fi\u0219ierul de configurare."
+                    },
+                    "directory": {
+                        "name": "directory",
+                        "description": "Path to a directory of configuration to import."
+                    },
+                    "remove-files": {
+                        "name": "remove-files",
+                        "description": "Elimina\u021bi fi\u0219ierele dup\u0103 sincronizare."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ci"
+                ],
+                "key": "config.import",
+                "dashed": "config-import",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:import:single",
+                "description": "Import the selected configuration.",
+                "options": [],
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Configuration name."
+                    },
+                    "file": {
+                        "name": "file",
+                        "description": "Path to the import file"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cis"
+                ],
+                "key": "config.import.single",
+                "dashed": "config-import-single",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:override",
+                "description": "Suprascrie valoarea de configurare \u00een configurarea activ\u0103.",
+                "options": [],
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Numele configur\u0103rii."
+                    },
+                    "key": {
+                        "name": "key",
+                        "description": "Cheie"
+                    },
+                    "value": {
+                        "name": "value",
+                        "description": "Valoare"
+                    }
+                },
+                "examples": [
+                    {
+                        "description": "D\u00e9finir la valeur de \"flood\" du module Contact \u00e0 10.",
+                        "execution": "drupal config:override contact.settings flood.limit 10"
+                    }
+                ],
+                "aliases": [],
+                "key": "config.override",
+                "dashed": "config-override",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "config:settings:debug",
+                "description": "Displays current key:value on settings file.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "config.settings.debug",
+                "dashed": "config-settings-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "container": [
+            {
+                "name": "container:debug",
+                "description": "Afi\u0219eaz\u0103 serviciile curente pentru o aplica\u021bie.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "cod"
+                ],
+                "key": "container.debug",
+                "dashed": "container-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "create": [
+            {
+                "name": "create:comments",
+                "description": "Create dummy comments for your Drupal 8 application.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "commands.create.comments.arguments.limit"
+                    },
+                    "title-words": {
+                        "name": "title-words",
+                        "description": "commands.create.comments.arguments.title-words"
+                    },
+                    "time-range": {
+                        "name": "time-range",
+                        "description": "commands.create.comments.arguments.time-range"
+                    }
+                },
+                "arguments": {
+                    "node-id": {
+                        "name": "node-id",
+                        "description": "Node ID where the comments will be created"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.comments",
+                "dashed": "create-comments",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "create:nodes",
+                "description": "Create dummy nodes for your Drupal 8 application.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "commands.create.nodes.arguments.limit"
+                    },
+                    "title-words": {
+                        "name": "title-words",
+                        "description": "commands.create.nodes.arguments.title-words"
+                    },
+                    "time-range": {
+                        "name": "time-range",
+                        "description": "commands.create.nodes.arguments.time-range"
+                    }
+                },
+                "arguments": {
+                    "content-types": {
+                        "name": "content-types",
+                        "description": "Content type(s) to be used in node creation"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.nodes",
+                "dashed": "create-nodes",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "create:terms",
+                "description": "Create dummy terms for your Drupal 8 application.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "How many terms would you like to create"
+                    },
+                    "name-words": {
+                        "name": "name-words",
+                        "description": "Maximum number of words in term names"
+                    }
+                },
+                "arguments": {
+                    "vocabularies": {
+                        "name": "vocabularies",
+                        "description": "Vocabularie(s) to be used in terms creation"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.terms",
+                "dashed": "create-terms",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "create:users",
+                "description": "Create dummy users for your Drupal 8 application.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "How many users would you like to create"
+                    },
+                    "password": {
+                        "name": "password",
+                        "description": "Password to be set to users created"
+                    },
+                    "time-range": {
+                        "name": "time-range",
+                        "description": "How far back in time should the users be dated"
+                    }
+                },
+                "arguments": {
+                    "roles": {
+                        "name": "roles",
+                        "description": "Role(s) to be used in user creation"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.users",
+                "dashed": "create-users",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "create:vocabularies",
+                "description": "Create dummy vocabularies for your Drupal 8 application.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "How many vocabularies would you like to create"
+                    },
+                    "name-words": {
+                        "name": "name-words",
+                        "description": "Maximum number of words in vocabulary names"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "create.vocabularies",
+                "dashed": "create-vocabularies",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "cron": [
+            {
+                "name": "cron:debug",
+                "description": "Lista modulelor ce implementeaz\u0103 un cron",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "cron.debug",
+                "dashed": "cron-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "cron:execute",
+                "description": "Execut\u0103 cron-ul direct dintr-un modul sau din toate",
+                "options": [],
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cre"
+                ],
+                "key": "cron.execute",
+                "dashed": "cron-execute",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "cron:release",
+                "description": "Lanseaz\u0103 sistemul de blocare pentru a repermite reluarea rul\u0103rii cron-ului",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "crr"
+                ],
+                "key": "cron.release",
+                "dashed": "cron-release",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "database": [
+            {
+                "name": "database:client",
+                "description": "Lanseaz\u0103 un client DB dac\u0103 acesta este disponibil",
+                "options": [],
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Cheia bazei de date din fi\u0219ierul settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.client",
+                "dashed": "database-client",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:connect",
+                "description": "Lanseaz\u0103 un client DB dac\u0103 acesta este disponibil",
+                "options": [],
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Cheia bazei de date din fi\u0219ierul settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.connect",
+                "dashed": "database-connect",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:drop",
+                "description": "Drop all tables in a given database.",
+                "options": [],
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Database key from settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.drop",
+                "dashed": "database-drop",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:dump",
+                "description": "Desc\u0103rca\u021bi structura \u0219i con\u021binutul bazei de date MySQL \u0219i tabelele acesteia",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "commands.database.dump.option.file"
+                    }
+                },
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Cheia bazei de date din fi\u0219ierul settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.dump",
+                "dashed": "database-dump",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:log:clear",
+                "description": "Elimina\u021bi evenimentele din tabelul DBLog, sunt disponibile filtre",
+                "options": {
+                    "type": {
+                        "name": "type",
+                        "description": "Filter events by a specific type"
+                    },
+                    "severity": {
+                        "name": "severity",
+                        "description": "Filter events by a specific level of severity"
+                    },
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "Filter events by a specific user id"
+                    }
+                },
+                "arguments": {
+                    "event-id": {
+                        "name": "event-id",
+                        "description": "DBLog event ID"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.log.clear",
+                "dashed": "database-log-clear",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:log:debug",
+                "description": "Afi\u0219eaz\u0103 evenimentele curente, de intrare \u00een jurnal, pentru aplica\u021bie",
+                "options": {
+                    "type": {
+                        "name": "type",
+                        "description": "Filtra\u021bi evenimentele dup\u0103 un anumit tip"
+                    },
+                    "severity": {
+                        "name": "severity",
+                        "description": "Filtra\u021bi evenimentele dup\u0103 un anumit nivel de severitate"
+                    },
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "Filtra\u021bi evenimentele dup\u0103 un anumit id de utilizator"
+                    },
+                    "reverse": {
+                        "name": "reverse",
+                        "description": "Reverse the order of events"
+                    },
+                    "limit": {
+                        "name": "limit",
+                        "description": "Limita\u021bi rezultatele la un anumit num\u0103r"
+                    },
+                    "offset": {
+                        "name": "offset",
+                        "description": "Punctul de \u00eenceput al unei limite"
+                    }
+                },
+                "arguments": {
+                    "event-id": {
+                        "name": "event-id",
+                        "description": "ID-ul evenimentului DBLog"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.log.debug",
+                "dashed": "database-log-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:restore",
+                "description": "Restabile\u0219te structura \u0219i con\u021binutul bazei de date MySQL \u0219i ale tabelelor acesteia",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Numele fi\u0219ierului pentru backup-ul bazei dvs. de date"
+                    }
+                },
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Cheia bazei de date din fi\u0219ierul settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.restore",
+                "dashed": "database-restore",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "database:table:debug",
+                "description": "Show all tables in a given database.",
+                "options": {
+                    "database": {
+                        "name": "database",
+                        "description": "Database key from settings.php"
+                    }
+                },
+                "arguments": {
+                    "table": {
+                        "name": "table",
+                        "description": "Table to debug"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.table.debug",
+                "dashed": "database-table-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "generate": [
+            {
+                "name": "generate:authentication:provider",
+                "description": "Genereaz\u0103 un \"Authentication Provider\"",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "commands.generate.authentication.provider.options.class"
+                    },
+                    "provider-id": {
+                        "name": "provider-id",
+                        "description": "commands.generate.authentication.provider.options.provider-id"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gap"
+                ],
+                "key": "generate.authentication.provider",
+                "dashed": "generate-authentication-provider",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:command",
+                "description": "Genereaz\u0103 comenzi pentru consol\u0103.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele Clasei \"Command\""
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "Numele comenzii."
+                    },
+                    "container-aware": {
+                        "name": "container-aware",
+                        "description": "C\u00e2nd este executat\u0103 comanda este con\u0219tient\u0103 de instalarea de drupal a sitului"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gcm"
+                ],
+                "key": "generate.command",
+                "dashed": "generate-command",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:controller",
+                "description": "Genereaz\u0103 \u0219i \u00cenregistreaz\u0103 un controller",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei Controller"
+                    },
+                    "routes": {
+                        "name": "routes",
+                        "description": "The routes, must be an array containing [title, method, path]"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    },
+                    "test": {
+                        "name": "test",
+                        "description": "Genera\u021bi o clas\u0103 de test"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gcn"
+                ],
+                "key": "generate.controller",
+                "dashed": "generate-controller",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:doc:dash",
+                "description": "Genera\u021bi pachetul DrupalConsole.docset pentru Dash",
+                "options": {
+                    "path": {
+                        "name": "path",
+                        "description": "Calea c\u0103tre directorul unde docset-ul va fi salvat."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gdd"
+                ],
+                "key": "generate.doc.dash",
+                "dashed": "generate-doc-dash",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:doc:data",
+                "description": "commands.generate.doc.data.description",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "commands.generate.doc.data.options.file"
+                    },
+                    "help": {
+                        "name": "help",
+                        "description": null
+                    },
+                    "quiet": {
+                        "name": "quiet",
+                        "description": null
+                    },
+                    "verbose": {
+                        "name": "verbose",
+                        "description": null
+                    },
+                    "version": {
+                        "name": "version",
+                        "description": null
+                    },
+                    "ansi": {
+                        "name": "ansi",
+                        "description": null
+                    },
+                    "no-ansi": {
+                        "name": "no-ansi",
+                        "description": null
+                    },
+                    "no-interaction": {
+                        "name": "no-interaction",
+                        "description": null
+                    },
+                    "env": {
+                        "name": "env",
+                        "description": "The Environment name"
+                    },
+                    "root": {
+                        "name": "root",
+                        "description": "Define the Drupal root to be used in command execution"
+                    },
+                    "no-debug": {
+                        "name": "no-debug",
+                        "description": "Switches off debug mode"
+                    },
+                    "learning": {
+                        "name": "learning",
+                        "description": "Generate a verbose code output"
+                    },
+                    "generate-chain": {
+                        "name": "generate-chain",
+                        "description": "Shows command options and arguments as yaml output to be used in chain command"
+                    },
+                    "generate-inline": {
+                        "name": "generate-inline",
+                        "description": "Shows command options and arguments as inline command"
+                    },
+                    "generate-doc": {
+                        "name": "generate-doc",
+                        "description": "Shows command options and arguments as markdown"
+                    },
+                    "target": {
+                        "name": "target",
+                        "description": "Site name you want to interact with (for local or remote sites)"
+                    },
+                    "uri": {
+                        "name": "uri",
+                        "description": "URI of the Drupal site to use (for multi-site environments or when running on an alternate port)"
+                    },
+                    "yes": {
+                        "name": "yes",
+                        "description": "Skip confirmation and proceed"
+                    }
+                },
+                "arguments": {
+                    "command": {
+                        "name": "command",
+                        "description": null
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "generate.doc.data",
+                "dashed": "generate-doc-data",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:doc:gitbook",
+                "description": "Genereaz\u0103 documenta\u021biile pentru Comenzi",
+                "options": {
+                    "path": {
+                        "name": "path",
+                        "description": "Calea de randare a documenta\u021biei"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gdg"
+                ],
+                "key": "generate.doc.gitbook",
+                "dashed": "generate-doc-gitbook",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:entity:bundle",
+                "description": "Genereaz\u0103 un tip de con\u021binut nou (nod \/ entitate)",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "bundle-name": {
+                        "name": "bundle-name",
+                        "description": "Numele ma\u0219in\u0103 pentru tipul de con\u021binut"
+                    },
+                    "bundle-title": {
+                        "name": "bundle-title",
+                        "description": "Numele lizibil pentru tipul de con\u021binut"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "geb"
+                ],
+                "key": "generate.entity.bundle",
+                "dashed": "generate-entity-bundle",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:entity:config",
+                "description": "Genereaz\u0103 o entitate de configurare nou\u0103",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "entity-class": {
+                        "name": "entity-class",
+                        "description": "Clasa entit\u0103\u021bii de configurare"
+                    },
+                    "entity-name": {
+                        "name": "entity-name",
+                        "description": "Numele entit\u0103\u021bii de configurare"
+                    },
+                    "base-path": {
+                        "name": "base-path",
+                        "description": "The base-path for the config entity routes"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta"
+                    },
+                    "bundle-of": {
+                        "name": "bundle-of",
+                        "description": "Acts as bundle for content entities"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gecg"
+                ],
+                "key": "generate.entity.config",
+                "dashed": "generate-entity-config",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:entity:content",
+                "description": "Genereaz\u0103 o entitate de con\u021binut nou\u0103",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "entity-class": {
+                        "name": "entity-class",
+                        "description": "Clasa entit\u0103\u021bii de con\u021binut"
+                    },
+                    "entity-name": {
+                        "name": "entity-name",
+                        "description": "Numele entit\u0103\u021bii de con\u021binut"
+                    },
+                    "base-path": {
+                        "name": "base-path",
+                        "description": "The base-path for the content entity routes"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta"
+                    },
+                    "has-bundles": {
+                        "name": "has-bundles",
+                        "description": "Entity has bundles"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gect"
+                ],
+                "key": "generate.entity.content",
+                "dashed": "generate-entity-content",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:event:subscriber",
+                "description": "Genereaz\u0103 un abonat la eveniment",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "commands.generate.service.options.name"
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele Clasei"
+                    },
+                    "events": {
+                        "name": "events",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ges"
+                ],
+                "key": "generate.event.subscriber",
+                "dashed": "generate-event-subscriber",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:form",
+                "description": "Genereaz\u0103 un \"FormBase\" nou",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei formularului"
+                    },
+                    "form-id": {
+                        "name": "form-id",
+                        "description": "ID-ul formularului"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Creeaz\u0103 intr\u0103ri \u00eentr-un formular."
+                    },
+                    "routing": {
+                        "name": "routing",
+                        "description": "Actualizeaz\u0103 rutarea"
+                    },
+                    "menu_link_gen": {
+                        "name": "menu_link_gen",
+                        "description": "commands.generate.form.options.menu_link_gen"
+                    },
+                    "menu_link_title": {
+                        "name": "menu_link_title",
+                        "description": "commands.generate.form.options.menu_link_title"
+                    },
+                    "menu_parent": {
+                        "name": "menu_parent",
+                        "description": "commands.generate.form.options.menu_parent"
+                    },
+                    "menu_link_desc": {
+                        "name": "menu_link_desc",
+                        "description": "commands.generate.form.options.menu_link_desc"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.form",
+                "dashed": "generate-form",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:form:alter",
+                "description": "Genereaz\u0103 o implementare a hook_form_alter() sau hook_form_FORM_ID_alter()",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "form-id": {
+                        "name": "form-id",
+                        "description": "ID-ul formularului de alterat"
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Creeaz\u0103 intr\u0103ri \u00eentr-un formular."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gfa"
+                ],
+                "key": "generate.form.alter",
+                "dashed": "generate-form-alter",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:form:config",
+                "description": "Genereaz\u0103 un \"ConfigFormBase\" nou",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei formularului"
+                    },
+                    "form-id": {
+                        "name": "form-id",
+                        "description": "ID-ul formularului"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Creeaz\u0103 intr\u0103ri \u00eentr-un formular."
+                    },
+                    "routing": {
+                        "name": "routing",
+                        "description": "Actualizeaz\u0103 rutarea"
+                    },
+                    "menu_link_gen": {
+                        "name": "menu_link_gen",
+                        "description": "commands.generate.form.options.menu_link_gen"
+                    },
+                    "menu_link_title": {
+                        "name": "menu_link_title",
+                        "description": "commands.generate.form.options.menu_link_title"
+                    },
+                    "menu_parent": {
+                        "name": "menu_parent",
+                        "description": "commands.generate.form.options.menu_parent"
+                    },
+                    "menu_link_desc": {
+                        "name": "menu_link_desc",
+                        "description": "commands.generate.form.options.menu_link_desc"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.form.config",
+                "dashed": "generate-form-config",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:module",
+                "description": "Genereaz\u0103 un modul.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "Numele ma\u0219in\u0103 (doar minuscule \u0219i liniu\u021be jos)"
+                    },
+                    "module-path": {
+                        "name": "module-path",
+                        "description": "Calea c\u0103tre modul"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descrierea modulului"
+                    },
+                    "core": {
+                        "name": "core",
+                        "description": "Versiunea nucleului"
+                    },
+                    "package": {
+                        "name": "package",
+                        "description": "Pachetul modulului"
+                    },
+                    "module-file": {
+                        "name": "module-file",
+                        "description": "Add a .module file"
+                    },
+                    "features-bundle": {
+                        "name": "features-bundle",
+                        "description": "Define module as feature using the given Features bundle name"
+                    },
+                    "composer": {
+                        "name": "composer",
+                        "description": "Adaug\u0103 un fi\u0219ier composer.json"
+                    },
+                    "dependencies": {
+                        "name": "dependencies",
+                        "description": "Dependin\u021bele modulului trebuie s\u0103 fie separate prin virgul\u0103 (ex. context, panels)"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gm"
+                ],
+                "key": "generate.module",
+                "dashed": "generate-module",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:permissions",
+                "description": "Genereaz\u0103 permisiuni pentru modul",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "permissions": {
+                        "name": "permissions",
+                        "description": "Creeaz\u0103 permisiuni."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gp"
+                ],
+                "key": "generate.permissions",
+                "dashed": "generate-permissions",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:block",
+                "description": "Genereaz\u0103 un Plugin de tip bloc",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pluginului"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta pluginului"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul pluginului"
+                    },
+                    "theme-region": {
+                        "name": "theme-region",
+                        "description": "Regiunea temei unde va fi randat Pluginul de tip bloc"
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Creeaz\u0103 intr\u0103ri \u00eentr-un formular."
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gpb"
+                ],
+                "key": "generate.plugin.block",
+                "dashed": "generate-plugin-block",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:ckeditorbutton",
+                "description": "Generate CKEditor button plugin.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Plugin class name"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Plugin label"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "Plugin ID. NOTE: This corresponds to the CKEditor plugin name. It is the first argument of the CKEDITOR.plugins.add() function in the plugin.js file."
+                    },
+                    "button-name": {
+                        "name": "button-name",
+                        "description": "Button name. NOTE: This corresponds to the CKEditor button name. They are the first argument of the editor.ui.addButton() or editor.ui.addRichCombo() functions in the plugin.js file."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.ckeditorbutton",
+                "dashed": "generate-plugin-ckeditorbutton",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:condition",
+                "description": "Genereaz\u0103 o condi\u021bie pentru extensie.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pentru condi\u021bia extensiei"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta pentru condi\u021bia extensiei"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul condi\u021biei extensiei"
+                    },
+                    "context-definition-id": {
+                        "name": "context-definition-id",
+                        "description": "ID-ul definirii contextului"
+                    },
+                    "context-definition-label": {
+                        "name": "context-definition-label",
+                        "description": "Eticheta definirii contextului"
+                    },
+                    "context-definition-required": {
+                        "name": "context-definition-required",
+                        "description": "Definirea contextului este obligatorie (ADEV\u0102RAT\/FALS)"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.condition",
+                "dashed": "generate-plugin-condition",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:field",
+                "description": "Genereaz\u0103 extensiile: tipul de c\u00e2mp, widget-ul si formatare.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "type-class": {
+                        "name": "type-class",
+                        "description": "Numele clasei extensiei de tip c\u00e2mp"
+                    },
+                    "type-label": {
+                        "name": "type-label",
+                        "description": "Eticheta extensiei de tip c\u00e2mp"
+                    },
+                    "type-plugin-id": {
+                        "name": "type-plugin-id",
+                        "description": "ID-ul extensiei de tip c\u00e2mp"
+                    },
+                    "type-description": {
+                        "name": "type-description",
+                        "description": "commands.generate.plugin.field.options.type-type-description"
+                    },
+                    "formatter-class": {
+                        "name": "formatter-class",
+                        "description": "commands.generate.plugin.field.options.class"
+                    },
+                    "formatter-label": {
+                        "name": "formatter-label",
+                        "description": "Eticheta extensiei de formatare a c\u00e2mpului"
+                    },
+                    "formatter-plugin-id": {
+                        "name": "formatter-plugin-id",
+                        "description": "ID-ul extensiei de formatare a c\u00e2mpului"
+                    },
+                    "widget-class": {
+                        "name": "widget-class",
+                        "description": "Numele clasei extensiei de formatare a c\u00e2mpului"
+                    },
+                    "widget-label": {
+                        "name": "widget-label",
+                        "description": "Eticheta extensiei de widget pentru c\u00e2mp"
+                    },
+                    "widget-plugin-id": {
+                        "name": "widget-plugin-id",
+                        "description": "ID-ul extensiei de widget pentru c\u00e2mp"
+                    },
+                    "field-type": {
+                        "name": "field-type",
+                        "description": "Tipul de c\u00e2mp cu, care pot fi folosite formatarea si widgetul"
+                    },
+                    "default-widget": {
+                        "name": "default-widget",
+                        "description": "Widget-ul predefinit al extensiei de tip c\u00e2mp."
+                    },
+                    "default-formatter": {
+                        "name": "default-formatter",
+                        "description": "Formatarea predefinit\u0103 pentru extensia de tip c\u00e2mp"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.field",
+                "dashed": "generate-plugin-field",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:fieldformatter",
+                "description": "Genereaz\u0103 extensia de formatare a c\u00e2mpului.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pentru extensie"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta extensiei"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul extensiei"
+                    },
+                    "field-type": {
+                        "name": "field-type",
+                        "description": "Tipul c\u00e2mpului cu, care extensia poate fi folosit\u0103"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.fieldformatter",
+                "dashed": "generate-plugin-fieldformatter",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:fieldtype",
+                "description": "Genereaz\u0103 extensia de tip c\u00e2mp.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pentru extensie"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta extensiei"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul extensiei"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descrierea extensiei"
+                    },
+                    "default-widget": {
+                        "name": "default-widget",
+                        "description": "Valoarea implicit\u0103 a acestei extensii pentru widgetul c\u00e2mpului"
+                    },
+                    "default-formatter": {
+                        "name": "default-formatter",
+                        "description": "Valoarea implicit\u0103 a acestei extensii pentru formatarea c\u00e2mpului"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.fieldtype",
+                "dashed": "generate-plugin-fieldtype",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:fieldwidget",
+                "description": "Genereaz\u0103 extensia de widget pentru c\u00e2mp.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pentru extensie"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta extensiei"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul extensiei"
+                    },
+                    "field-type": {
+                        "name": "field-type",
+                        "description": "Tipul c\u00e2mpului cu, care extensia poate fi folosit\u0103"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.fieldwidget",
+                "dashed": "generate-plugin-fieldwidget",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:imageeffect",
+                "description": "Genereaz\u0103 un plugin pentru efecte de imagini.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pluginului"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta pluginului"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "Id-ul pluginului"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descrierea pluginului"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.imageeffect",
+                "dashed": "generate-plugin-imageeffect",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:imageformatter",
+                "description": "Genereaz\u0103 un plugin de formatare a imaginii.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pluginului"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta pluginului"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul pluginului"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.imageformatter",
+                "dashed": "generate-plugin-imageformatter",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:mail",
+                "description": "Generate a plugin mail",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Plugin class name"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Plugin label"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "Plugin id"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.mail",
+                "dashed": "generate-plugin-mail",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:rest:resource",
+                "description": "Genereaz\u0103 un plugin de tip resurs\u0103 REST",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Clasa pluginului de tip resurs\u0103 REST"
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "commands.generate.service.options.name"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "Id-ul pluginului de tip resurs\u0103 REST"
+                    },
+                    "plugin-label": {
+                        "name": "plugin-label",
+                        "description": "Eticheta pluginului de tip resurs\u0103 REST"
+                    },
+                    "plugin-url": {
+                        "name": "plugin-url",
+                        "description": "URL-ul pluginului de tip resurs\u0103 REST"
+                    },
+                    "plugin-states": {
+                        "name": "plugin-states",
+                        "description": "St\u0103rile pluginului de tip resurs\u0103 REST"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.rest.resource",
+                "dashed": "generate-plugin-rest-resource",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:rulesaction",
+                "description": "Genereaz\u0103 un plugin care implementeaz\u0103 o ac\u0163iune de rules",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei pluginului"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta pluginului"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID-ul pluginului"
+                    },
+                    "type": {
+                        "name": "type",
+                        "description": "Tip de ac\u0163iune (user sau node)"
+                    },
+                    "category": {
+                        "name": "category",
+                        "description": "Categoria pluginului"
+                    },
+                    "context": {
+                        "name": "context",
+                        "description": "Contextul pluginului"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.rulesaction",
+                "dashed": "generate-plugin-rulesaction",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:type:annotation",
+                "description": "Genereaz\u0103 un tip de plugin cu descoperire de adnota\u0163ii",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei tipului de plugin."
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "commands.generate.plugin.type.annotation.options.plugin-id"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Eticheta tipului de plugin."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.type.annotation",
+                "dashed": "generate-plugin-type-annotation",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:type:yaml",
+                "description": "Genereaz\u0103 un tip de plugin cu descoperire de YAML.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei tipului de plugin."
+                    },
+                    "plugin-name": {
+                        "name": "plugin-name",
+                        "description": "Numele ma\u015fin\u0103 al tipului de plugin"
+                    },
+                    "plugin-file-name": {
+                        "name": "plugin-file-name",
+                        "description": "Numele fi\u015fierului tipului de plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.type.yaml",
+                "dashed": "generate-plugin-type-yaml",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:plugin:views:field",
+                "description": "Genereaz\u0103 o extensie custom de views field.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Clasa extensiei de views field"
+                    },
+                    "title": {
+                        "name": "title",
+                        "description": "Titlul extensiei de views field"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descrierea extensiei de views field"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.views.field",
+                "dashed": "generate-plugin-views-field",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:profile",
+                "description": "Generate a profile.",
+                "options": {
+                    "profile": {
+                        "name": "profile",
+                        "description": "The profile name"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "The machine name (lowercase and underscore only)"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Profile description"
+                    },
+                    "core": {
+                        "name": "core",
+                        "description": "Core version"
+                    },
+                    "dependencies": {
+                        "name": "dependencies",
+                        "description": "Module dependencies separated by commas (i.e. context, panels)"
+                    },
+                    "distribution": {
+                        "name": "distribution",
+                        "description": "The distribution name"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.profile",
+                "dashed": "generate-profile",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:routesubscriber",
+                "description": "Genereaz\u0103 un RouteSubscriber",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "Numele serviciului"
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele clasei"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.routesubscriber",
+                "dashed": "generate-routesubscriber",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:service",
+                "description": "Genereaza un serviciu",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "commands.generate.service.options.name"
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Numele Clasei"
+                    },
+                    "interface": {
+                        "name": "interface",
+                        "description": "commands.common.service.options.interface"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "\u00cencarc\u0103 serviciile din container."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gs"
+                ],
+                "key": "generate.service",
+                "dashed": "generate-service",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "generate:theme",
+                "description": "Genereaz\u0103 o tem\u0103.",
+                "options": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.generate.theme.options.module"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "Numele ma\u015fin\u0103 (doar caracere minuscule \u015fi caracterul \"_\" sunt suportate)"
+                    },
+                    "theme-path": {
+                        "name": "theme-path",
+                        "description": "commands.generate.theme.options.module-path"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descrierea temei"
+                    },
+                    "core": {
+                        "name": "core",
+                        "description": "Versiunea nucleului"
+                    },
+                    "package": {
+                        "name": "package",
+                        "description": "Pachetul"
+                    },
+                    "global-library": {
+                        "name": "global-library",
+                        "description": "Numele librariei de stilizare global\u0103"
+                    },
+                    "base-theme": {
+                        "name": "base-theme",
+                        "description": "Tema de baz\u0103 (ex.: classy, stable)"
+                    },
+                    "regions": {
+                        "name": "regions",
+                        "description": "Regiuni"
+                    },
+                    "breakpoints": {
+                        "name": "breakpoints",
+                        "description": "Puncte de \u00eentrerupere"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gt"
+                ],
+                "key": "generate.theme",
+                "dashed": "generate-theme",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "image": [
+            {
+                "name": "image:styles:debug",
+                "description": "List image styles on the site",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "image.styles.debug",
+                "dashed": "image-styles-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "image:styles:flush",
+                "description": "Execute flush function by image style or execute all flush images styles",
+                "options": [],
+                "arguments": {
+                    "styles": {
+                        "name": "styles",
+                        "description": "The Images Styles name."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "image.styles.flush",
+                "dashed": "image-styles-flush",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "locale": [
+            {
+                "name": "locale:language:add",
+                "description": "Adaug\u0103 o limb\u0103 ce va avea suport pe situl dvs.",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Limba, de exemplu, es sau Spanish"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "locale.language.add",
+                "dashed": "locale-language-add",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "locale:language:delete",
+                "description": "\u0218terge\u021bi o limb\u0103 ce are suport pe situl dvs.",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Limba, de exemplu, es sau Spanish"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "locale.language.delete",
+                "dashed": "locale-language-delete",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "locale:translation:status",
+                "description": "Listeaz\u0103 actualiz\u0103rile de traducere disponibile",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Limba, de exemplu, es sau Spanish"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "locale.translation.status",
+                "dashed": "locale-translation-status",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "migrate": [
+            {
+                "name": "migrate:debug",
+                "description": "Afiseaz\u0103 migra\u021biunea curent\u0103 accesibil\u0103 pentru aplica\u021bie",
+                "options": [],
+                "arguments": {
+                    "tag": {
+                        "name": "tag",
+                        "description": "Tag-ul migra\u021biunii"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "mid"
+                ],
+                "key": "migrate.debug",
+                "dashed": "migrate-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "migrate:execute",
+                "description": "Execut\u0103 o migra\u0163ie disponibil\u0103 pentru aplica\u0163ie",
+                "options": {
+                    "site-url": {
+                        "name": "site-url",
+                        "description": "URL-ul sitului"
+                    },
+                    "db-type": {
+                        "name": "db-type",
+                        "description": "commands.migrate.setup.migrations.options.db-type"
+                    },
+                    "db-host": {
+                        "name": "db-host",
+                        "description": "Gazda bazei de date"
+                    },
+                    "db-name": {
+                        "name": "db-name",
+                        "description": "Numele bazei de date"
+                    },
+                    "db-user": {
+                        "name": "db-user",
+                        "description": "Utilizatorul bazei de date"
+                    },
+                    "db-pass": {
+                        "name": "db-pass",
+                        "description": "Parola bazei de date"
+                    },
+                    "db-prefix": {
+                        "name": "db-prefix",
+                        "description": "Prefixul bazei de date"
+                    },
+                    "db-port": {
+                        "name": "db-port",
+                        "description": "Portul bazei de date"
+                    },
+                    "exclude": {
+                        "name": "exclude",
+                        "description": "ID-urile migra\u0163iilor care vor fi excluse."
+                    }
+                },
+                "arguments": {
+                    "migration-ids": {
+                        "name": "migration-ids",
+                        "description": "Id-ul migra\u0163iei"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "mie"
+                ],
+                "key": "migrate.execute",
+                "dashed": "migrate-execute",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "migrate:setup",
+                "description": "\u00cenc\u0103rca\u021bi \u0219i crea\u021bi migra\u021biunile relevante pentru o baz\u0103 de date furnizat\u0103",
+                "options": {
+                    "db-type": {
+                        "name": "db-type",
+                        "description": "Tipul bazei de date Drupal"
+                    },
+                    "db-host": {
+                        "name": "db-host",
+                        "description": "Gazda bazei de date"
+                    },
+                    "db-name": {
+                        "name": "db-name",
+                        "description": "Numele bazei de date"
+                    },
+                    "db-user": {
+                        "name": "db-user",
+                        "description": "Utilizatorul bazei de date"
+                    },
+                    "db-pass": {
+                        "name": "db-pass",
+                        "description": "Parola bazei de date"
+                    },
+                    "db-prefix": {
+                        "name": "db-prefix",
+                        "description": "Prefixul bazei de date"
+                    },
+                    "db-port": {
+                        "name": "db-port",
+                        "description": "Portul bazei de date"
+                    },
+                    "files-directory": {
+                        "name": "files-directory",
+                        "description": "Files Directory"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "migrate.setup",
+                "dashed": "migrate-setup",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "module": [
+            {
+                "name": "module:debug",
+                "description": "Afi\u015feaz\u0103 Modulele curente pentru aplica\u0163ie",
+                "options": {
+                    "status": {
+                        "name": "status",
+                        "description": "Starea Modulului [activat|dezactivat]"
+                    },
+                    "type": {
+                        "name": "type",
+                        "description": "Tipul Modulului [core|no-core]"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "module.debug",
+                "dashed": "module-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "module:download",
+                "description": "Descarc\u0103 modulul sau modulele pentru aplica\u021bie",
+                "options": {
+                    "latest": {
+                        "name": "latest",
+                        "description": "Default to download most recent version"
+                    }
+                },
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Module or modules to be enabled should be separated by a space"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "md"
+                ],
+                "key": "module.download",
+                "dashed": "module-download",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "module:install",
+                "description": "Instaleaza Module",
+                "options": {
+                    "latest": {
+                        "name": "latest",
+                        "description": "Default to download most recent version"
+                    }
+                },
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Module or modules to be enabled should be separated by a space"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "module.install",
+                "dashed": "module-install",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "module:uninstall",
+                "description": "Dezinstaleaz\u0103 un modul sau mai multe din aplica\u0163ie.",
+                "options": {
+                    "force": {
+                        "name": "force",
+                        "description": "Do you want to ignore dependencies and forcefully uninstall the module?"
+                    }
+                },
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Modulul sau modulele care urmeaz\u0103 a fi dezinstalate ar trebui separate de o virgul\u0103"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "module.uninstall",
+                "dashed": "module-uninstall",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "multisite": [
+            {
+                "name": "multisite:debug",
+                "description": "Listeaz\u0103 toate multi siturile disponibile \u00een sistem",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "multisite.debug",
+                "dashed": "multisite-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "node": [
+            {
+                "name": "node:access:rebuild",
+                "description": "Rebuild node access permissions. Rebuilding will remove all privileges to content and replace them with permissions based on the current modules and settings.",
+                "options": {
+                    "batch": {
+                        "name": "batch",
+                        "description": "Process in batch mode."
+                    }
+                },
+                "arguments": [],
+                "examples": [
+                    {
+                        "description": "Rebuild node access permissions",
+                        "execution": "drupal node:access:rebuild --batch"
+                    }
+                ],
+                "aliases": [],
+                "key": "node.access.rebuild",
+                "dashed": "node-access-rebuild",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "plugin": [
+            {
+                "name": "plugin:debug",
+                "description": "commands.plugin.debug.description",
+                "options": [],
+                "arguments": {
+                    "type": {
+                        "name": "type",
+                        "description": "commands.plugin.debug.arguments.type"
+                    },
+                    "id": {
+                        "name": "id",
+                        "description": "commands.plugin.debug.arguments.id"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "plugin.debug",
+                "dashed": "plugin-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "rest": [
+            {
+                "name": "rest:debug",
+                "description": "Afi\u015feaz\u0103 resursele REST curente.",
+                "options": {
+                    "authorization": {
+                        "name": "authorization",
+                        "description": "Starea resursei REST activat | dezactivat"
+                    }
+                },
+                "arguments": {
+                    "resource-id": {
+                        "name": "resource-id",
+                        "description": "ID-ul resursei"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "rede"
+                ],
+                "key": "rest.debug",
+                "dashed": "rest-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "rest:disable",
+                "description": "Dezactiveaza o resurs\u0103 REST",
+                "options": [],
+                "arguments": {
+                    "resource-id": {
+                        "name": "resource-id",
+                        "description": "ID-ul resursei"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "redi"
+                ],
+                "key": "rest.disable",
+                "dashed": "rest-disable",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "rest:enable",
+                "description": "Activeaz\u0103 o resurs\u0103 REST pentru aplica\u0163ie.",
+                "options": [],
+                "arguments": {
+                    "resource-id": {
+                        "name": "resource-id",
+                        "description": "ID-ul resursei"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ree"
+                ],
+                "key": "rest.enable",
+                "dashed": "rest-enable",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "router": [
+            {
+                "name": "router:debug",
+                "description": "Afi\u015feaz\u0103 rutele curente",
+                "options": [],
+                "arguments": {
+                    "route-name": {
+                        "name": "route-name",
+                        "description": "Numele rutei"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "rod"
+                ],
+                "key": "router.debug",
+                "dashed": "router-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "router:rebuild",
+                "description": "Reconstruie\u015fte o rut\u0103",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ror"
+                ],
+                "key": "router.rebuild",
+                "dashed": "router-rebuild",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "settings": [
+            {
+                "name": "settings:debug",
+                "description": "List user Drupal Console settings.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "settings.debug",
+                "dashed": "settings-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "settings:set",
+                "description": "Change a specific setting value in DrupalConsole config file",
+                "options": [],
+                "arguments": {
+                    "setting-name": {
+                        "name": "setting-name",
+                        "description": "Setting name in yaml flatten format to set a value in Drupal Console config file"
+                    },
+                    "setting-value": {
+                        "name": "setting-value",
+                        "description": "Setting value to set in Drupal Console config file"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "settings.set",
+                "dashed": "settings-set",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "site": [
+            {
+                "name": "site:debug",
+                "description": "Listeaz\u0103 toate siturile locale sau la distan\u021b\u0103.",
+                "options": [],
+                "arguments": {
+                    "target": {
+                        "name": "target",
+                        "description": "commands.site.debug.options.target"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "sd"
+                ],
+                "key": "site.debug",
+                "dashed": "site-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:import:local",
+                "description": "Import\/Configure an existing local Drupal project",
+                "options": {
+                    "environment": {
+                        "name": "environment",
+                        "description": "Name of the environment that is going to be imported"
+                    }
+                },
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Name that will be used to generate the site config"
+                    },
+                    "directory": {
+                        "name": "directory",
+                        "description": "Existing Drupal root directory"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "site.import.local",
+                "dashed": "site-import-local",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:install",
+                "description": "Instaleaz\u0103 un proiect Drupal",
+                "options": {
+                    "langcode": {
+                        "name": "langcode",
+                        "description": "Limba proiectului"
+                    },
+                    "db-type": {
+                        "name": "db-type",
+                        "description": "Tipul bazei de date care va fi folosit la instalarea proiectului"
+                    },
+                    "db-file": {
+                        "name": "db-file",
+                        "description": "Drupal Database file to be used in install"
+                    },
+                    "db-host": {
+                        "name": "db-host",
+                        "description": "Gazda bazei de date"
+                    },
+                    "db-name": {
+                        "name": "db-name",
+                        "description": "Numele bazei de date"
+                    },
+                    "db-user": {
+                        "name": "db-user",
+                        "description": "Utilizatorul bazei de date"
+                    },
+                    "db-pass": {
+                        "name": "db-pass",
+                        "description": "Parola bazei de date"
+                    },
+                    "db-prefix": {
+                        "name": "db-prefix",
+                        "description": "Prefixul bazei de date"
+                    },
+                    "db-port": {
+                        "name": "db-port",
+                        "description": "Portul bazei de date"
+                    },
+                    "site-name": {
+                        "name": "site-name",
+                        "description": "Numele sitului drupal"
+                    },
+                    "site-mail": {
+                        "name": "site-mail",
+                        "description": "Adresa de email a sitului"
+                    },
+                    "account-name": {
+                        "name": "account-name",
+                        "description": "Numele de utilizator al administratorului sitului"
+                    },
+                    "account-mail": {
+                        "name": "account-mail",
+                        "description": "Adresa de email a administratorului sitului"
+                    },
+                    "account-pass": {
+                        "name": "account-pass",
+                        "description": "Parola administratorului sitului"
+                    }
+                },
+                "arguments": {
+                    "profile": {
+                        "name": "profile",
+                        "description": "Profilul Drupal care va fi instalat"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "si"
+                ],
+                "key": "site.install",
+                "dashed": "site-install",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:maintenance",
+                "description": "Activeaz\u0103 modul de mentenan\u0163\u0103",
+                "options": [],
+                "arguments": {
+                    "mode": {
+                        "name": "mode",
+                        "description": "Modul de mentenan\u0163\u0103 al sait-ului[on\/off]"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "sma"
+                ],
+                "key": "site.maintenance",
+                "dashed": "site-maintenance",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:mode",
+                "description": "Schimb\u0103 configurarile de performan\u0163\u0103 ale sistemului",
+                "options": [],
+                "arguments": {
+                    "environment": {
+                        "name": "environment",
+                        "description": "Numele mediului"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "smo"
+                ],
+                "key": "site.mode",
+                "dashed": "site-mode",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:new",
+                "description": "Creaz\u0103 un proiect Drupal nou.",
+                "options": [],
+                "arguments": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "Directory when downloading Drupal"
+                    },
+                    "version": {
+                        "name": "version",
+                        "description": "Versiunea de Drupal care va fi desc\u0103rcat\u0103"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "sn"
+                ],
+                "key": "site.new",
+                "dashed": "site-new",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:statistics",
+                "description": "Show the current statistics of website.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "site.statistics",
+                "dashed": "site-statistics",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "site:status",
+                "description": "Vizualizeaz\u0103 statutul de instalare (Drupal Installation status)",
+                "options": {
+                    "format": {
+                        "name": "format",
+                        "description": "commands.site.status.options.format"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ss"
+                ],
+                "key": "site.status",
+                "dashed": "site-status",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "state": [
+            {
+                "name": "state:debug",
+                "description": "Show the current State keys.",
+                "options": [],
+                "arguments": {
+                    "key": {
+                        "name": "key",
+                        "description": "The State key to debug."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "state.debug",
+                "dashed": "state-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "state:delete",
+                "description": "Delete State",
+                "options": [],
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "State name."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "state.delete",
+                "dashed": "state-delete",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "state:override",
+                "description": "Override a State key.",
+                "options": [],
+                "arguments": {
+                    "key": {
+                        "name": "key",
+                        "description": "The State key to override."
+                    },
+                    "value": {
+                        "name": "value",
+                        "description": "The State value to set."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "state.override",
+                "dashed": "state-override",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "test": [
+            {
+                "name": "test:debug",
+                "description": "Afi\u015feaz\u0103 testele accesibile",
+                "options": {
+                    "test-class": {
+                        "name": "test-class",
+                        "description": "Clasa de test"
+                    }
+                },
+                "arguments": {
+                    "group": {
+                        "name": "group",
+                        "description": "Grupa"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "td"
+                ],
+                "key": "test.debug",
+                "dashed": "test-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "test:run",
+                "description": "Execut\u0103 un test dintre testele disponibile in aplica\u0163ie.",
+                "options": {
+                    "url": {
+                        "name": "url",
+                        "description": "commands.test.run.arguments.url"
+                    }
+                },
+                "arguments": {
+                    "test-class": {
+                        "name": "test-class",
+                        "description": "Clasa de test"
+                    },
+                    "test-methods": {
+                        "name": "test-methods",
+                        "description": "Test method(s) to be run"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "tr"
+                ],
+                "key": "test.run",
+                "dashed": "test-run",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "theme": [
+            {
+                "name": "theme:debug",
+                "description": "Afi\u0219eaz\u0103 temele curente pentru aplica\u021bie",
+                "options": [],
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "O anumit\u0103 tem\u0103 ce va fi depanat\u0103"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "tde"
+                ],
+                "key": "theme.debug",
+                "dashed": "theme-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "theme:download",
+                "description": "Descarc\u0103 tema \u00een aplica\u021bie",
+                "options": [],
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.theme.download.options.theme"
+                    },
+                    "version": {
+                        "name": "version",
+                        "description": "Versiunea temei, de ex: 1.x-dev"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "td"
+                ],
+                "key": "theme.download",
+                "dashed": "theme-download",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "theme:install",
+                "description": "Instaleaz\u0103 tema sau temele \u00een aplica\u021bie",
+                "options": {
+                    "set-default": {
+                        "name": "set-default",
+                        "description": "Seta\u021bi tema ca \u0219i tem\u0103 implicit\u0103"
+                    }
+                },
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.theme.install.options.module"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ti"
+                ],
+                "key": "theme.install",
+                "dashed": "theme-install",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "theme:uninstall",
+                "description": "Dezinstaleaz\u0103 tema sau temele din aplica\u021bie",
+                "options": [],
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.theme.uninstall.options.module"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "tu"
+                ],
+                "key": "theme.uninstall",
+                "dashed": "theme-uninstall",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "translation": [
+            {
+                "name": "translation:cleanup",
+                "description": "Clean up translation files",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Language to clean up files against English"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.cleanup",
+                "dashed": "translation-cleanup",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "translation:pending",
+                "description": "Determine pending translation string in a language or a specific file in a language",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Specific file to determine pending translations against English"
+                    }
+                },
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Language to determine pending translations against English"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.pending",
+                "dashed": "translation-pending",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "translation:stats",
+                "description": "Generate translate stats",
+                "options": {
+                    "format": {
+                        "name": "format",
+                        "description": "Define output format table|markdown"
+                    }
+                },
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Language to generate translation stats against English"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.stats",
+                "dashed": "translation-stats",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "translation:sync",
+                "description": "Sync translation files",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "commands.translation.stats.options.file"
+                    }
+                },
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Language to syncronize against English source files"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.sync",
+                "dashed": "translation-sync",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "update": [
+            {
+                "name": "update:debug",
+                "description": "Afi\u015feaz\u0103 actualiz\u0103rile disponibile pentru aplica\u0163ie.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "upd"
+                ],
+                "key": "update.debug",
+                "dashed": "update-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "update:entities",
+                "description": "Applying Entity Updates",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "update.entities",
+                "dashed": "update-entities",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "update:execute",
+                "description": "Execut\u0103 o func\u0163ie specific\u0103 Update N dintr-un modul sau execut\u0103-le pe toate",
+                "options": [],
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Numele Modulului."
+                    },
+                    "update-n": {
+                        "name": "update-n",
+                        "description": "Func\u0163ia specific\u0103 Update N care va fi executat\u0103"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "upe"
+                ],
+                "key": "update.execute",
+                "dashed": "update-execute",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "user": [
+            {
+                "name": "user:debug",
+                "description": "Displays current users for the application",
+                "options": {
+                    "roles": {
+                        "name": "roles",
+                        "description": "Roles to filter debug"
+                    },
+                    "limit": {
+                        "name": "limit",
+                        "description": "How many users would you listed in debug"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "user.debug",
+                "dashed": "user-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "user:delete",
+                "description": "Delete users for the application",
+                "options": {
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "User id to be deleted"
+                    },
+                    "roles": {
+                        "name": "roles",
+                        "description": "Roles associated to users to be deleted"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "user.delete",
+                "dashed": "user-delete",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "user:login:clear:attempts",
+                "description": "\u015eterge autentific\u0103rile e\u015fuate pentru un cont.",
+                "options": [],
+                "arguments": {
+                    "uid": {
+                        "name": "uid",
+                        "description": "ID utilizator."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "uslca"
+                ],
+                "key": "user.login.clear.attempts",
+                "dashed": "user-login-clear-attempts",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "user:login:url",
+                "description": "Returneaza un URL de logare care poate fi folosit o singur\u0103 dat\u0103.",
+                "options": [],
+                "arguments": {
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "ID utilizator."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "uslu"
+                ],
+                "key": "user.login.url",
+                "dashed": "user-login-url",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "user:password:hash",
+                "description": "Genereaz\u0103 un hash dintr-o parol\u0103 de tip text.",
+                "options": [],
+                "arguments": {
+                    "password": {
+                        "name": "password",
+                        "description": "Parola\/Parole in format text"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "usph"
+                ],
+                "key": "user.password.hash",
+                "dashed": "user-password-hash",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "user:password:reset",
+                "description": "Reseteaz\u0103 parola pentru un utilizator.",
+                "options": [],
+                "arguments": {
+                    "user": {
+                        "name": "user",
+                        "description": "ID Utilizator."
+                    },
+                    "password": {
+                        "name": "password",
+                        "description": "Parola sub form\u0103 de text."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "uspr"
+                ],
+                "key": "user.password.reset",
+                "dashed": "user-password-reset",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "views": [
+            {
+                "name": "views:debug",
+                "description": "Afi\u015feaz\u0103 resursele curente ale views-ului pentru aplica\u021bie.",
+                "options": {
+                    "tag": {
+                        "name": "tag",
+                        "description": "Eticheta view-ului"
+                    },
+                    "status": {
+                        "name": "status",
+                        "description": "Statusul view-ului (Activat|Dezactivat)"
+                    }
+                },
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID-ul view-ului"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "vde"
+                ],
+                "key": "views.debug",
+                "dashed": "views-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "views:disable",
+                "description": "Dezactiveaz\u0103 un View",
+                "options": [],
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID-ul view-ului"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "vdi"
+                ],
+                "key": "views.disable",
+                "dashed": "views-disable",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "views:enable",
+                "description": "Activeaz\u0103 un View",
+                "options": [],
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID-ul view-ului"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ve"
+                ],
+                "key": "views.enable",
+                "dashed": "views-enable",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "views:plugins:debug",
+                "description": "Display current views plugins for the application",
+                "options": [],
+                "arguments": {
+                    "type": {
+                        "name": "type",
+                        "description": "Filter views plugins by type"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "views.plugins.debug",
+                "dashed": "views-plugins-debug",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ],
+        "yaml": [
+            {
+                "name": "yaml:diff",
+                "description": "Compar\u0103 dou\u0103 fi\u015fiere YAML pentru a determina diferen\u0163ele dintre acestea.",
+                "options": {
+                    "stats": {
+                        "name": "stats",
+                        "description": "Afi\u0219eaz\u0103 statistici cu privire la compararea fi\u0219ierelor YAML"
+                    },
+                    "negate": {
+                        "name": "negate",
+                        "description": "Defini\u021bi modul de diferen\u021b\u0103 sau de compara\u021bie egal\u0103, valori posibile TRUE\/FALSE sau 0\/1"
+                    },
+                    "limit": {
+                        "name": "limit",
+                        "description": "Limiteaz\u0103 rezultatele la un anumit num\u0103r"
+                    },
+                    "offset": {
+                        "name": "offset",
+                        "description": "Punctul de \u00eenceput al unei limite"
+                    }
+                },
+                "arguments": {
+                    "yaml-left": {
+                        "name": "yaml-left",
+                        "description": "Fi\u015fierul YAML folosit ca baz\u0103 pentru comparare."
+                    },
+                    "yaml-right": {
+                        "name": "yaml-right",
+                        "description": "Fi\u015fierul YAML folosit pentru a determina lipsurile \u015fi diferen\u0163ele cu fi\u015fierul de baz\u0103."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "yd"
+                ],
+                "key": "yaml.diff",
+                "dashed": "yaml-diff",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "yaml:merge",
+                "description": "Une\u015fte doua sau mai multe fi\u015fiere de tip YAML \u00eentr-un nou fi\u015fier de tip YAML. Ultimele valori sunt p\u0103strate.",
+                "options": [],
+                "arguments": {
+                    "yaml-destination": {
+                        "name": "yaml-destination",
+                        "description": "Calea c\u0103tre fi\u015fierul nou \u00een care va fi salvat rezultatul."
+                    },
+                    "yaml-files": {
+                        "name": "yaml-files",
+                        "description": "Calea c\u0103tre fi\u015fierele YAML care vor fi modificate."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ym"
+                ],
+                "key": "yaml.merge",
+                "dashed": "yaml-merge",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "yaml:split",
+                "description": "Separ\u0103 un fi\u015fier YAML folosind indentarea ca \u015fi criteriu de separare.",
+                "options": {
+                    "indent-level": {
+                        "name": "indent-level",
+                        "description": "Separ\u0103 fi\u015fierul YAML folosind un nivel specific de indentare"
+                    },
+                    "file-output-prefix": {
+                        "name": "file-output-prefix",
+                        "description": "commands.yaml.split.options.file-output-prefix"
+                    },
+                    "file-output-suffix": {
+                        "name": "file-output-suffix",
+                        "description": "commands.yaml.split.options.file-output-suffix"
+                    },
+                    "starting-key": {
+                        "name": "starting-key",
+                        "description": "Cheia YAML de unde se va \u00eencepe separarea. Este util\u0103 pentru a extrage fragmente de elemente."
+                    },
+                    "exclude-parents-key": {
+                        "name": "exclude-parents-key",
+                        "description": "Exclude cheia p\u0103rinte din numele fi\u015fierului generat"
+                    }
+                },
+                "arguments": {
+                    "yaml-file": {
+                        "name": "yaml-file",
+                        "description": "commands.yaml.split.value.arguments.yaml-file"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ys"
+                ],
+                "key": "yaml.split",
+                "dashed": "yaml-split",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "yaml:update:key",
+                "description": "\u00cenlocuie\u015fte o cheie de tip YAML \u00eentr-un fi\u015fier te tip YAML.",
+                "options": [],
+                "arguments": {
+                    "yaml-file": {
+                        "name": "yaml-file",
+                        "description": "Calea c\u0103tre fi\u015fierul de tip YAML care va fi actualizat"
+                    },
+                    "yaml-key": {
+                        "name": "yaml-key",
+                        "description": "Cheia de tip YAML care va fi actualizat"
+                    },
+                    "yaml-new-key": {
+                        "name": "yaml-new-key",
+                        "description": "commands.yaml.update.value.arguments.yaml-new-key"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "yu"
+                ],
+                "key": "yaml.update.key",
+                "dashed": "yaml-update-key",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            },
+            {
+                "name": "yaml:update:value",
+                "description": "Actualizeaz\u0103 valoarea unei chei specifice \u00eentr-un fi\u015fier YAML.",
+                "options": [],
+                "arguments": {
+                    "yaml-file": {
+                        "name": "yaml-file",
+                        "description": "Calea c\u0103tre fi\u015fierul de tip YAML care va fi actualizat"
+                    },
+                    "yaml-key": {
+                        "name": "yaml-key",
+                        "description": "Cheia de tip YAML care va fi actualizat"
+                    },
+                    "yaml-value": {
+                        "name": "yaml-value",
+                        "description": "Valoarea care va fi atribuit\u0103"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "yuv"
+                ],
+                "key": "yaml.update.value",
+                "dashed": "yaml-update-value",
+                "messages": {
+                    "usage": "Folosire",
+                    "options": "Op\u021biuni disponibile",
+                    "option": "Op\u021biune",
+                    "details": "Detalii",
+                    "arguments": "Argumente disponibile",
+                    "argument": "Argument",
+                    "examples": "Exemple"
+                }
+            }
+        ]
+    },
+    "application": {
+        "namespaces": [
+            "none",
+            "cache",
+            "chain",
+            "config",
+            "container",
+            "create",
+            "cron",
+            "database",
+            "generate",
+            "image",
+            "locale",
+            "migrate",
+            "module",
+            "multisite",
+            "node",
+            "plugin",
+            "rest",
+            "router",
+            "settings",
+            "site",
+            "state",
+            "test",
+            "theme",
+            "translation",
+            "update",
+            "user",
+            "views",
+            "yaml"
+        ],
+        "options": [
+            {
+                "name": "help",
+                "description": "Display this help message"
+            },
+            {
+                "name": "quiet",
+                "description": "Do not output any message"
+            },
+            {
+                "name": "verbose",
+                "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug"
+            },
+            {
+                "name": "version",
+                "description": "<info>%s<\/info> versiunea <comment>%s<\/comment>"
+            },
+            {
+                "name": "ansi",
+                "description": "Force ANSI output"
+            },
+            {
+                "name": "no-ansi",
+                "description": "Disable ANSI output"
+            },
+            {
+                "name": "no-interaction",
+                "description": "Do not ask any interactive question"
+            },
+            {
+                "name": "env",
+                "description": "Numele mediului de lucru."
+            },
+            {
+                "name": "root",
+                "description": "Defini\u021bi r\u0103d\u0103cina Drupal care va fi folosit\u0103 la executarea comenzilor"
+            },
+            {
+                "name": "no-debug",
+                "description": "Opre\u0219te modul de depanare."
+            },
+            {
+                "name": "learning",
+                "description": "Generarea unui cod verbal."
+            },
+            {
+                "name": "generate-chain",
+                "description": "Printeaz\u0103 op\u021biunile \u0219i argumentele de execu\u021bie \u00een format yaml pentru a fi folosit \u00een comand\u0103 \u00eenl\u0103n\u021buit\u0103"
+            },
+            {
+                "name": "generate-inline",
+                "description": "Printeaz\u0103 op\u021biunile \u0219i argumentele de execu\u021bie \u00een apel inline pentru a fi folosit pe viitor"
+            },
+            {
+                "name": "generate-doc",
+                "description": "Shows command options and arguments as markdown"
+            },
+            {
+                "name": "target",
+                "description": "Site name you want to interact with (for local or remote sites)"
+            },
+            {
+                "name": "uri",
+                "description": "URI-ul sitului Drupal care va fi folosit (pentru medii multi-sit sau c\u00e2nd ruleaz\u0103 pe un port alternativ)"
+            },
+            {
+                "name": "yes",
+                "description": "Skip confirmation and proceed"
+            }
+        ],
+        "arguments": [
+            {
+                "name": "command",
+                "description": "The command to execute"
+            }
+        ],
+        "languages": {
+            "en": "English",
+            "es": "Espa\u00f1ol",
+            "ca": "Catal\u00e0",
+            "fr": "Fran\u00e7ais",
+            "gu": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4",
+            "ko": "\ud55c\uad6d\uc5b4",
+            "hi": "\u0939\u093f\u0928\u094d\u0926\u0940",
+            "hu": "Magyar",
+            "id": "Bahasa Indonesia",
+            "ja": "\u65e5\u672c\u8a9e",
+            "mr": "\u092e\u0930\u093e\u0920\u0940",
+            "pa": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+            "pt_br": "Portugu\u00eas",
+            "ro": "Romanian",
+            "ru": "p\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a",
+            "tl": "Tagalog",
+            "vn": "Ti\u1ebfng Vi\u1ec7t",
+            "zh_hans": "\u7b80\u4f53\u4e2d\u6587"
+        },
+        "messages": {
+            "title": "Comenzi pentru Consola de Drupal disponibile",
+            "note": "Not\u0103",
+            "note_description": "Comenzile Consolei de Drupal *trebuie* s\u0103 fie rulate din r\u0103d\u0103cina instal\u0103rii Drupal 8",
+            "command": "Comanda Consolei Drupal",
+            "options": "Op\u021biuni disponibile",
+            "option": "Op\u021biune",
+            "details": "Detalii",
+            "arguments": "Argumente disponibile",
+            "argument": "Argument",
+            "examples": "Exemple"
+        },
+        "examples": []
+    }
+}

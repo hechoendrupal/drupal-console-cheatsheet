@@ -1,0 +1,4677 @@
+{
+    "commands": {
+        "none": [
+            {
+                "name": "about",
+                "description": "Muestra informaci\u00f3n b\u00e1sica sobre el proyecto Drupal Console",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "about",
+                "dashed": "about",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "chain",
+                "description": "Ejecuci\u00f3n de comandos en secuencia",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Archivo definido por el usuario que contiene comandos para ser ejecutados en secuencia."
+                    },
+                    "placeholder": {
+                        "name": "placeholder",
+                        "description": "commands.chain.options.placeholder"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "chain",
+                "dashed": "chain",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "check",
+                "description": "commands.check.description",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "check",
+                "dashed": "check",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "help",
+                "description": "Muestra ayuda para un comando dado",
+                "options": {
+                    "xml": {
+                        "name": "xml",
+                        "description": "Mostrar el listado como XML"
+                    },
+                    "raw": {
+                        "name": "raw",
+                        "description": "Mostrar el listado como datos en bruto"
+                    },
+                    "format": {
+                        "name": "format",
+                        "description": "El formato de salida (txt, xml, json, o md)"
+                    }
+                },
+                "arguments": {
+                    "command_name": {
+                        "name": "command_name",
+                        "description": "El nombre del comando"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "help",
+                "dashed": "help",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "init",
+                "description": "commands.init.description",
+                "options": {
+                    "override": {
+                        "name": "override",
+                        "description": "commands.init.options.override"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "init",
+                "dashed": "init",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "list",
+                "description": "Enlista comandos",
+                "options": {
+                    "xml": {
+                        "name": "xml",
+                        "description": "Para desplegar la lista como XML"
+                    },
+                    "raw": {
+                        "name": "raw",
+                        "description": "Para desplegar un lista completa de comandos"
+                    },
+                    "format": {
+                        "name": "format",
+                        "description": "Formato de salida (txt, xml, json, or md)"
+                    }
+                },
+                "arguments": {
+                    "namespace": {
+                        "name": "namespace",
+                        "description": "Nombre del espacio de nombres"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "list",
+                "dashed": "list",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "self-update",
+                "description": "Actualiza la consola a la \u00faltima versi\u00f3n.",
+                "options": {
+                    "major": {
+                        "name": "major",
+                        "description": "Actualiza a una nueva versi\u00f3n, si est\u00e1 disponible"
+                    },
+                    "manifest": {
+                        "name": "manifest",
+                        "description": "Sobreescribir la ruta del archivo manifest"
+                    },
+                    "current-version": {
+                        "name": "current-version",
+                        "description": "Sobreescribir la versi\u00f3n desde la que actualizar"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "self-update",
+                "dashed": "self-update",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "server",
+                "description": "Lanza el servidor web PHP interno",
+                "options": [],
+                "arguments": {
+                    "address": {
+                        "name": "address",
+                        "description": "Los valores direcci\u00f3n:puerto"
+                    }
+                },
+                "examples": [
+                    {
+                        "description": "Corre usando el valor de direcci\u00f3n por defecto 127.0.0.1.8088",
+                        "execution": "drupal server"
+                    },
+                    {
+                        "description": "Pasar una direcci\u00f3n para usar un n\u00famero de puerto diferente",
+                        "execution": "drupal server 127.0.0.1:8089"
+                    },
+                    {
+                        "description": "Ejecutando la direcci\u00f3n por defecto, usando la opci\u00f3n --root para indicar la ruta ra\u00edz de Drupal",
+                        "execution": "drupal --root=\/var\/www\/drupal8.dev server"
+                    }
+                ],
+                "aliases": [],
+                "key": "server",
+                "dashed": "server",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "cache": [
+            {
+                "name": "cache:rebuild",
+                "description": "Reconstruye y limpia todas las cach\u00e9s del sitio.",
+                "options": [],
+                "arguments": {
+                    "cache": {
+                        "name": "cache",
+                        "description": "Reconstruir s\u00f3lo una cache determinada."
+                    }
+                },
+                "examples": [
+                    {
+                        "description": "Reconstruir todas las cach\u00e9s",
+                        "execution": "drupal cr all"
+                    },
+                    {
+                        "description": "Reconstruir la cach\u00e9 \"discovery\"",
+                        "execution": "drupal cr discovery"
+                    }
+                ],
+                "aliases": [
+                    "cr"
+                ],
+                "key": "cache.rebuild",
+                "dashed": "cache-rebuild",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "chain": [
+            {
+                "name": "chain:debug",
+                "description": "Lista las secuencias de comandos disponibles.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "chain.debug",
+                "dashed": "chain-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "config": [
+            {
+                "name": "config:debug",
+                "description": "Muestra la configuraci\u00f3n actual.",
+                "options": [],
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Nombre de la configuraci\u00f3n."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cde"
+                ],
+                "key": "config.debug",
+                "dashed": "config-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:delete",
+                "description": "Eliminar configuraci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Nombre de la configuraci\u00f3n."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "config.delete",
+                "dashed": "config-delete",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:diff",
+                "description": "Muestra los items de configuraci\u00f3n que son diferentes en la configuraci\u00f3n activa comparada con un directorio.",
+                "options": {
+                    "reverse": {
+                        "name": "reverse",
+                        "description": "Ver los cambios inversos (por ejemplo, las diferencias de un directorio frente a la configuraci\u00f3n activa)."
+                    }
+                },
+                "arguments": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "El directorio con el que comparar. Si se omite, se elige uno de los directorios de configuraci\u00f3n de Drupal."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "config.diff",
+                "dashed": "config-diff",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:edit",
+                "description": "Editar la configuraci\u00f3n seleccionada.",
+                "options": [],
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Nombre de la configuraci\u00f3n."
+                    },
+                    "editor": {
+                        "name": "editor",
+                        "description": "Editor."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cdit"
+                ],
+                "key": "config.edit",
+                "dashed": "config-edit",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:export",
+                "description": "Exporta la configuraci\u00f3n actual de la aplicaci\u00f3n.",
+                "options": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "Define el directorio de exportaci\u00f3n para guardar la configuraci\u00f3n."
+                    },
+                    "tar": {
+                        "name": "tar",
+                        "description": "Indique esta opci\u00f3n para exportar la configuraci\u00f3n a un archivo."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ce"
+                ],
+                "key": "config.export",
+                "dashed": "config-export",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:export:content:type",
+                "description": "Exporta un tipo de contenido determinado y todos sus campos.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "optional-config": {
+                        "name": "optional-config",
+                        "description": "Exportar el tipo de contenido como una configuraci\u00f3n YAML opcional en su m\u00f3dulo"
+                    }
+                },
+                "arguments": {
+                    "content-type": {
+                        "name": "content-type",
+                        "description": "Tipo de contenido a exportar"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cect"
+                ],
+                "key": "config.export.content.type",
+                "dashed": "config-export-content-type",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:export:single",
+                "description": "Exportar configuraci\u00f3n \u00fanica como archivo YAML.",
+                "options": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "Define el directorio de exportaci\u00f3n para guardar la configuraci\u00f3n."
+                    },
+                    "include-dependencies": {
+                        "name": "include-dependencies",
+                        "description": "Exportar dependencias de la configuraci\u00f3n tambi\u00e9n."
+                    }
+                },
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Nombre de la configuraci\u00f3n."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ces"
+                ],
+                "key": "config.export.single",
+                "dashed": "config-export-single",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:export:view",
+                "description": "Exporta una vista en formato YAML dentro de un m\u00f3dulo para ser reutilizado en otro sitio.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "optional-config": {
+                        "name": "optional-config",
+                        "description": "Exportar la vista como una configuraci\u00f3n YAML opcional en su m\u00f3dulo"
+                    },
+                    "include-module-dependencies": {
+                        "name": "include-module-dependencies",
+                        "description": "Incluir las dependencias del m\u00f3dulo en un archivo YAML de informaci\u00f3n de m\u00f3dulo"
+                    }
+                },
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID de la vista"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cev"
+                ],
+                "key": "config.export.view",
+                "dashed": "config-export-view",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:import",
+                "description": "Importa la configuraci\u00f3n del estado actual de la aplicaci\u00f3n.",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Ruta al archivo de configuraci\u00f3n."
+                    },
+                    "directory": {
+                        "name": "directory",
+                        "description": "Ruta al directorio de configuraci\u00f3n a importar."
+                    },
+                    "remove-files": {
+                        "name": "remove-files",
+                        "description": "Eliminar archivos tras la sincronizaci\u00f3n."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ci"
+                ],
+                "key": "config.import",
+                "dashed": "config-import",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:import:single",
+                "description": "Importar la configuraci\u00f3n seleccionada.",
+                "options": [],
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Nombre de la configuraci\u00f3n."
+                    },
+                    "file": {
+                        "name": "file",
+                        "description": "Path to the import file"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cis"
+                ],
+                "key": "config.import.single",
+                "dashed": "config-import-single",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:override",
+                "description": "Sobreescribir valor de la configuraci\u00f3n activa.",
+                "options": [],
+                "arguments": {
+                    "config-name": {
+                        "name": "config-name",
+                        "description": "Nombre de la configuraci\u00f3n."
+                    },
+                    "key": {
+                        "name": "key",
+                        "description": "Clave"
+                    },
+                    "value": {
+                        "name": "value",
+                        "description": "Valor"
+                    }
+                },
+                "examples": [
+                    {
+                        "description": "Definir el valor de \"flood\" del m\u00f3dulo Contacto a 10.",
+                        "execution": "drupal config:override contact.settings flood.limit 10"
+                    }
+                ],
+                "aliases": [],
+                "key": "config.override",
+                "dashed": "config-override",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "config:settings:debug",
+                "description": "Muestra el par clave:valor actual en el archivo de configuraci\u00f3n.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "config.settings.debug",
+                "dashed": "config-settings-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "container": [
+            {
+                "name": "container:debug",
+                "description": "Muestra los servicios actuales de la aplicaci\u00f3n.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "cod"
+                ],
+                "key": "container.debug",
+                "dashed": "container-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "create": [
+            {
+                "name": "create:comments",
+                "description": "Crear comentarios de prueba para tu aplicaci\u00f3n en Drupal 8.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "commands.create.comments.arguments.limit"
+                    },
+                    "title-words": {
+                        "name": "title-words",
+                        "description": "commands.create.comments.arguments.title-words"
+                    },
+                    "time-range": {
+                        "name": "time-range",
+                        "description": "commands.create.comments.arguments.time-range"
+                    }
+                },
+                "arguments": {
+                    "node-id": {
+                        "name": "node-id",
+                        "description": "El ID del nodo en donde se crear\u00e1n los comentarios"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.comments",
+                "dashed": "create-comments",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "create:nodes",
+                "description": "Crea nodos de relleno para su Drupal 8.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "commands.create.nodes.arguments.limit"
+                    },
+                    "title-words": {
+                        "name": "title-words",
+                        "description": "commands.create.nodes.arguments.title-words"
+                    },
+                    "time-range": {
+                        "name": "time-range",
+                        "description": "commands.create.nodes.arguments.time-range"
+                    }
+                },
+                "arguments": {
+                    "content-types": {
+                        "name": "content-types",
+                        "description": "Tipo(s) de contenido que desea generar"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.nodes",
+                "dashed": "create-nodes",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "create:terms",
+                "description": "Crea t\u00e9rminos de relleno para tu Drupal 8.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "Cu\u00e1ntos t\u00e9rminos le gustar\u00eda crear"
+                    },
+                    "name-words": {
+                        "name": "name-words",
+                        "description": "N\u00famero m\u00e1ximo de palabras en los t\u00edtulos de los t\u00e9rminos"
+                    }
+                },
+                "arguments": {
+                    "vocabularies": {
+                        "name": "vocabularies",
+                        "description": "Vocabulario(s) que ser\u00e1n usados en la generaci\u00f3n de t\u00e9rminos"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.terms",
+                "dashed": "create-terms",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "create:users",
+                "description": "Crea usuarios de prueba para tu Drupal 8.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "Cu\u00e1ntos usuarios le gustar\u00eda crear"
+                    },
+                    "password": {
+                        "name": "password",
+                        "description": "Contrase\u00f1a de los usuarios creados"
+                    },
+                    "time-range": {
+                        "name": "time-range",
+                        "description": "Cuanta antelaci\u00f3n debe tener la fecha de creaci\u00f3n de los usuarios"
+                    }
+                },
+                "arguments": {
+                    "roles": {
+                        "name": "roles",
+                        "description": "Role(s) que ser\u00e1n usados en la creaci\u00f3n de usuarios"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "create.users",
+                "dashed": "create-users",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "create:vocabularies",
+                "description": "Crea vocabularios de prueba para tu Drupal 8.",
+                "options": {
+                    "limit": {
+                        "name": "limit",
+                        "description": "Cu\u00e1ntos vocabularios le gustar\u00eda crear"
+                    },
+                    "name-words": {
+                        "name": "name-words",
+                        "description": "N\u00famero m\u00e1ximo de palabras en los nombres de vocabulario"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "create.vocabularies",
+                "dashed": "create-vocabularies",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "cron": [
+            {
+                "name": "cron:debug",
+                "description": "Listado de m\u00f3dulos que implementan una llamada al cron",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "cron.debug",
+                "dashed": "cron-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "cron:execute",
+                "description": "Ejecutar implementaci\u00f3n de cron desde un m\u00f3dulo espec\u00edfico o todos para ejecutar todas las implementaciones",
+                "options": [],
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "cre"
+                ],
+                "key": "cron.execute",
+                "dashed": "cron-execute",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "cron:release",
+                "description": "Desbloquea al cron para volver a ejecutarlo",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "crr"
+                ],
+                "key": "cron.release",
+                "dashed": "cron-release",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "database": [
+            {
+                "name": "database:client",
+                "description": "Lanzar un cliente de base de datos si est\u00e1 disponible",
+                "options": [],
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Clave de la base de datos, desde settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.client",
+                "dashed": "database-client",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:connect",
+                "description": "Lanzar un cliente de base de datos si est\u00e1 disponible",
+                "options": [],
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Clave de base de datos, desde settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.connect",
+                "dashed": "database-connect",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:drop",
+                "description": "Muestra todas las tablas de una base de datos datos.",
+                "options": [],
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "\u00cdndice de la base de datos del settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.drop",
+                "dashed": "database-drop",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:dump",
+                "description": "Volcado de la estructura y contenidos de las bases de datos y tablas MySQL",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "commands.database.dump.option.file"
+                    }
+                },
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Clave de la base de datos, desde settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.dump",
+                "dashed": "database-dump",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:log:clear",
+                "description": "Eliminar eventos de la tabla DBLog, filtros disponibles",
+                "options": {
+                    "type": {
+                        "name": "type",
+                        "description": "Filtrar por tipo de evento"
+                    },
+                    "severity": {
+                        "name": "severity",
+                        "description": "Filtrar eventos por nivel de severidad"
+                    },
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "Filtrar eventos por ID de usuario"
+                    }
+                },
+                "arguments": {
+                    "event-id": {
+                        "name": "event-id",
+                        "description": "ID del evento DBLog"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.log.clear",
+                "dashed": "database-log-clear",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:log:debug",
+                "description": "Desplegar eventos registrados al momento para la aplicaci\u00f3n",
+                "options": {
+                    "type": {
+                        "name": "type",
+                        "description": "Filtrar eventos por un tipo espec\u00edfico"
+                    },
+                    "severity": {
+                        "name": "severity",
+                        "description": "Filtrar eventos por un nivel de severidad espec\u00edfico"
+                    },
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "Filtrar eventos por un id de usuario espec\u00edfico"
+                    },
+                    "reverse": {
+                        "name": "reverse",
+                        "description": "Invertir el orden de los eventos"
+                    },
+                    "limit": {
+                        "name": "limit",
+                        "description": "Limitar los resultados a un n\u00famero espec\u00edfico"
+                    },
+                    "offset": {
+                        "name": "offset",
+                        "description": "Punto inicial de un l\u00edmite"
+                    }
+                },
+                "arguments": {
+                    "event-id": {
+                        "name": "event-id",
+                        "description": "ID del evento DBLog"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.log.debug",
+                "dashed": "database-log-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:restore",
+                "description": "Restaurar la estructura y los contenidos de bases de datos y tablas MySQL",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "El nombre de archivo para su archivo de respaldo de la base de datos"
+                    }
+                },
+                "arguments": {
+                    "database": {
+                        "name": "database",
+                        "description": "Clave de la base de datos en el settings.php"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.restore",
+                "dashed": "database-restore",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "database:table:debug",
+                "description": "Muestra todas las tablas en una base de datos.",
+                "options": {
+                    "database": {
+                        "name": "database",
+                        "description": "Clave de la base de datos de settings.php"
+                    }
+                },
+                "arguments": {
+                    "table": {
+                        "name": "table",
+                        "description": "Tabla a depurar"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "database.table.debug",
+                "dashed": "database-table-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "generate": [
+            {
+                "name": "generate:authentication:provider",
+                "description": "Generar un Proveedor de Autenticaci\u00f3n",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "commands.generate.authentication.provider.options.class"
+                    },
+                    "provider-id": {
+                        "name": "provider-id",
+                        "description": "commands.generate.authentication.provider.options.provider-id"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gap"
+                ],
+                "key": "generate.authentication.provider",
+                "dashed": "generate-authentication-provider",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:command",
+                "description": "Genera un comando para la consola.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la Clase de Comandos"
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "Nombre del comando."
+                    },
+                    "container-aware": {
+                        "name": "container-aware",
+                        "description": "Conoce el comando acerca de la instalaci\u00f3n del sitio drupal cuando sea ejecutado"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gcm"
+                ],
+                "key": "generate.command",
+                "dashed": "generate-command",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:controller",
+                "description": "Generar y registrar un controlador",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del controlador"
+                    },
+                    "routes": {
+                        "name": "routes",
+                        "description": "Las rutas, debe ser un array conteniendo [t\u00edtulo, m\u00e9todo, path]"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    },
+                    "test": {
+                        "name": "test",
+                        "description": "Generar una clase de prueba"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gcn"
+                ],
+                "key": "generate.controller",
+                "dashed": "generate-controller",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:doc:dash",
+                "description": "Generar el paquete DrupalConsole.docset para Dash",
+                "options": {
+                    "path": {
+                        "name": "path",
+                        "description": "Ruta al directorio donde se guardar\u00e1 el docset."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gdd"
+                ],
+                "key": "generate.doc.dash",
+                "dashed": "generate-doc-dash",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:doc:data",
+                "description": "commands.generate.doc.data.description",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "commands.generate.doc.data.options.file"
+                    },
+                    "help": {
+                        "name": "help",
+                        "description": null
+                    },
+                    "quiet": {
+                        "name": "quiet",
+                        "description": null
+                    },
+                    "verbose": {
+                        "name": "verbose",
+                        "description": null
+                    },
+                    "version": {
+                        "name": "version",
+                        "description": null
+                    },
+                    "ansi": {
+                        "name": "ansi",
+                        "description": null
+                    },
+                    "no-ansi": {
+                        "name": "no-ansi",
+                        "description": null
+                    },
+                    "no-interaction": {
+                        "name": "no-interaction",
+                        "description": null
+                    },
+                    "env": {
+                        "name": "env",
+                        "description": "The Environment name"
+                    },
+                    "root": {
+                        "name": "root",
+                        "description": "Define the Drupal root to be used in command execution"
+                    },
+                    "no-debug": {
+                        "name": "no-debug",
+                        "description": "Switches off debug mode"
+                    },
+                    "learning": {
+                        "name": "learning",
+                        "description": "Generate a verbose code output"
+                    },
+                    "generate-chain": {
+                        "name": "generate-chain",
+                        "description": "Shows command options and arguments as yaml output to be used in chain command"
+                    },
+                    "generate-inline": {
+                        "name": "generate-inline",
+                        "description": "Shows command options and arguments as inline command"
+                    },
+                    "generate-doc": {
+                        "name": "generate-doc",
+                        "description": "Shows command options and arguments as markdown"
+                    },
+                    "target": {
+                        "name": "target",
+                        "description": "Site name you want to interact with (for local or remote sites)"
+                    },
+                    "uri": {
+                        "name": "uri",
+                        "description": "URI of the Drupal site to use (for multi-site environments or when running on an alternate port)"
+                    },
+                    "yes": {
+                        "name": "yes",
+                        "description": "Skip confirmation and proceed"
+                    }
+                },
+                "arguments": {
+                    "command": {
+                        "name": "command",
+                        "description": null
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "generate.doc.data",
+                "dashed": "generate-doc-data",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:doc:gitbook",
+                "description": "Generar documentaciones para Comandos",
+                "options": {
+                    "path": {
+                        "name": "path",
+                        "description": "La ruta donde exportar la documentaci\u00f3n"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gdg"
+                ],
+                "key": "generate.doc.gitbook",
+                "dashed": "generate-doc-gitbook",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:entity:bundle",
+                "description": "Genera un nuevo tipo de contenido (nodo \/ bundle de entidad)",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "bundle-name": {
+                        "name": "bundle-name",
+                        "description": "El nombre m\u00e1quina del tipo de contenido"
+                    },
+                    "bundle-title": {
+                        "name": "bundle-title",
+                        "description": "El nombre amigable del tipo de contenido"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "geb"
+                ],
+                "key": "generate.entity.bundle",
+                "dashed": "generate-entity-bundle",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:entity:config",
+                "description": "Generar una nueva entidad de configuraci\u00f3n",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "entity-class": {
+                        "name": "entity-class",
+                        "description": "Clase de la entidad de configuraci\u00f3n"
+                    },
+                    "entity-name": {
+                        "name": "entity-name",
+                        "description": "Nombre de la entidad de configuraci\u00f3n"
+                    },
+                    "base-path": {
+                        "name": "base-path",
+                        "description": "El directorio ra\u00edz para las rutas de la entidad de configuraci\u00f3n"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta"
+                    },
+                    "bundle-of": {
+                        "name": "bundle-of",
+                        "description": "Act\u00faa como un bundle de entidades de contenido"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gecg"
+                ],
+                "key": "generate.entity.config",
+                "dashed": "generate-entity-config",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:entity:content",
+                "description": "Generar una nueva entidad de contenido",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "entity-class": {
+                        "name": "entity-class",
+                        "description": "Clase de la entidad de contenido"
+                    },
+                    "entity-name": {
+                        "name": "entity-name",
+                        "description": "Nombre de la entidad de contenido"
+                    },
+                    "base-path": {
+                        "name": "base-path",
+                        "description": "El directorio ra\u00edz para las rutas de la entidad de contenido"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta"
+                    },
+                    "has-bundles": {
+                        "name": "has-bundles",
+                        "description": "La entidad tiene bundles"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gect"
+                ],
+                "key": "generate.entity.content",
+                "dashed": "generate-entity-content",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:event:subscriber",
+                "description": "Genera un suscriptor de eventos",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "commands.generate.service.options.name"
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase"
+                    },
+                    "events": {
+                        "name": "events",
+                        "description": "Cargar servicios desde el contenedor."
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ges"
+                ],
+                "key": "generate.event.subscriber",
+                "dashed": "generate-event-subscriber",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:form",
+                "description": "Generar un nuevo \"FormBase\"",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "El nombre de la clase del formulario"
+                    },
+                    "form-id": {
+                        "name": "form-id",
+                        "description": "El id del formulario"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Crear campos de entrada en un formulario."
+                    },
+                    "routing": {
+                        "name": "routing",
+                        "description": "Actualizar la ruta"
+                    },
+                    "menu_link_gen": {
+                        "name": "menu_link_gen",
+                        "description": "commands.generate.form.options.menu_link_gen"
+                    },
+                    "menu_link_title": {
+                        "name": "menu_link_title",
+                        "description": "commands.generate.form.options.menu_link_title"
+                    },
+                    "menu_parent": {
+                        "name": "menu_parent",
+                        "description": "commands.generate.form.options.menu_parent"
+                    },
+                    "menu_link_desc": {
+                        "name": "menu_link_desc",
+                        "description": "commands.generate.form.options.menu_link_desc"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.form",
+                "dashed": "generate-form",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:form:alter",
+                "description": "Genera una implementaci\u00f3n de hook_form_alter() o hook_form_FORM_ID_alter",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "form-id": {
+                        "name": "form-id",
+                        "description": "ID del form a alterar"
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Crear campos de entrada en un formulario."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gfa"
+                ],
+                "key": "generate.form.alter",
+                "dashed": "generate-form-alter",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:form:config",
+                "description": "Generar un nuevo \"ConfigFormBase\"",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "El nombre de la clase del formulario"
+                    },
+                    "form-id": {
+                        "name": "form-id",
+                        "description": "El id del formulario"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Crear campos de entrada en un formulario."
+                    },
+                    "routing": {
+                        "name": "routing",
+                        "description": "Actualizar la ruta"
+                    },
+                    "menu_link_gen": {
+                        "name": "menu_link_gen",
+                        "description": "commands.generate.form.options.menu_link_gen"
+                    },
+                    "menu_link_title": {
+                        "name": "menu_link_title",
+                        "description": "commands.generate.form.options.menu_link_title"
+                    },
+                    "menu_parent": {
+                        "name": "menu_parent",
+                        "description": "commands.generate.form.options.menu_parent"
+                    },
+                    "menu_link_desc": {
+                        "name": "menu_link_desc",
+                        "description": "commands.generate.form.options.menu_link_desc"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.form.config",
+                "dashed": "generate-form-config",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:module",
+                "description": "Generar un m\u00f3dulo.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "El nombre del m\u00f3dulo"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "El nombre m\u00e1quina (s\u00f3lo min\u00fasculas y gui\u00f3n bajo)"
+                    },
+                    "module-path": {
+                        "name": "module-path",
+                        "description": "El directorio del m\u00f3dulo"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descripci\u00f3n del m\u00f3dulo"
+                    },
+                    "core": {
+                        "name": "core",
+                        "description": "Versi\u00f3n del core"
+                    },
+                    "package": {
+                        "name": "package",
+                        "description": "Paquete del m\u00f3dulo"
+                    },
+                    "module-file": {
+                        "name": "module-file",
+                        "description": "Agregar un archivo .module"
+                    },
+                    "features-bundle": {
+                        "name": "features-bundle",
+                        "description": "Define module as feature using the given Features bundle name"
+                    },
+                    "composer": {
+                        "name": "composer",
+                        "description": "A\u00f1adir un archivo composer.json"
+                    },
+                    "dependencies": {
+                        "name": "dependencies",
+                        "description": "Dependencias del m\u00f3dulo (por ejemplo: context, galleria, panels)"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gm"
+                ],
+                "key": "generate.module",
+                "dashed": "generate-module",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:permissions",
+                "description": "Genera los permisos del m\u00f3dulo",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "permissions": {
+                        "name": "permissions",
+                        "description": "Crear permisos."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gp"
+                ],
+                "key": "generate.permissions",
+                "dashed": "generate-permissions",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:block",
+                "description": "Genera un plugin de bloque",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    },
+                    "theme-region": {
+                        "name": "theme-region",
+                        "description": "Regi\u00f3n del tema para renderizar el plugin de bloque"
+                    },
+                    "inputs": {
+                        "name": "inputs",
+                        "description": "Crear campos de entrada en un formulario."
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gpb"
+                ],
+                "key": "generate.plugin.block",
+                "dashed": "generate-plugin-block",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:ckeditorbutton",
+                "description": "Genera un plugin de bot\u00f3n para CKEditor.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase para el plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin. NOTA: Este corresponde al nombre del plugin de CKEditor. Es el primer argumento de la funci\u00f3n CKEDITOR.plugins.add() en el archivo plugin.js."
+                    },
+                    "button-name": {
+                        "name": "button-name",
+                        "description": "Nombre del bot\u00f3n. NOTA: Este corresponde al nombre del bot\u00f3n de CKEditor. Son el primer argumento de las funciones editor.ui.addButton() o editor.ui.addRichCombo() en el archivo plugin.js."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.ckeditorbutton",
+                "dashed": "generate-plugin-ckeditorbutton",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:condition",
+                "description": "Genera un plugin de condici\u00f3n.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase para el plugin de condici\u00f3n"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin de condici\u00f3n"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin de condici\u00f3n"
+                    },
+                    "context-definition-id": {
+                        "name": "context-definition-id",
+                        "description": "ID de definici\u00f3n de contexto"
+                    },
+                    "context-definition-label": {
+                        "name": "context-definition-label",
+                        "description": "Etiqueta de la definici\u00f3n de contexto"
+                    },
+                    "context-definition-required": {
+                        "name": "context-definition-required",
+                        "description": "Una definici\u00f3n de contexto es obligatoria (TRUE\/FALSE)"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.condition",
+                "dashed": "generate-plugin-condition",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:field",
+                "description": "Genera plugins de widget, formateador y tipo de campo.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "type-class": {
+                        "name": "type-class",
+                        "description": "Nombre de clase del plugin de tipo de campo"
+                    },
+                    "type-label": {
+                        "name": "type-label",
+                        "description": "Etiqueta del plugin de tipo de campo"
+                    },
+                    "type-plugin-id": {
+                        "name": "type-plugin-id",
+                        "description": "ID del plugin de tipo de campo"
+                    },
+                    "type-description": {
+                        "name": "type-description",
+                        "description": "commands.generate.plugin.field.options.type-type-description"
+                    },
+                    "formatter-class": {
+                        "name": "formatter-class",
+                        "description": "commands.generate.plugin.field.options.class"
+                    },
+                    "formatter-label": {
+                        "name": "formatter-label",
+                        "description": "Etiqueta del plugin de formateador de campo"
+                    },
+                    "formatter-plugin-id": {
+                        "name": "formatter-plugin-id",
+                        "description": "ID del plugin de formateador de campo"
+                    },
+                    "widget-class": {
+                        "name": "widget-class",
+                        "description": "Nombre de clase del plugin de formateador de campo"
+                    },
+                    "widget-label": {
+                        "name": "widget-label",
+                        "description": "Etiqueta del plugin de widget de campo"
+                    },
+                    "widget-plugin-id": {
+                        "name": "widget-plugin-id",
+                        "description": "ID del plugin de widget de campo"
+                    },
+                    "field-type": {
+                        "name": "field-type",
+                        "description": "Plugin de tipo de campo, formateador y widget con el que puede ser usado"
+                    },
+                    "default-widget": {
+                        "name": "default-widget",
+                        "description": "Widget de campo por defecto del plugin de tipo de campo"
+                    },
+                    "default-formatter": {
+                        "name": "default-formatter",
+                        "description": "Formateador de campo por defecto del plugin de tipo de campo"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.field",
+                "dashed": "generate-plugin-field",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:fieldformatter",
+                "description": "Genera un plugin de formateador de campo.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    },
+                    "field-type": {
+                        "name": "field-type",
+                        "description": "Tipo de campo con el que el plugin puede ser usado"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.fieldformatter",
+                "dashed": "generate-plugin-fieldformatter",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:fieldtype",
+                "description": "Genera plugins de tipo de campo.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del Plugin"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descripci\u00f3n del Plugin"
+                    },
+                    "default-widget": {
+                        "name": "default-widget",
+                        "description": "Widget de campo por defecto para este plugin"
+                    },
+                    "default-formatter": {
+                        "name": "default-formatter",
+                        "description": "Formateador de campo por defecto para este plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.fieldtype",
+                "dashed": "generate-plugin-fieldtype",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:fieldwidget",
+                "description": "Genera un plugin de widget de campo.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    },
+                    "field-type": {
+                        "name": "field-type",
+                        "description": "Tipo de campo con el que puede ser usado el plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.fieldwidget",
+                "dashed": "generate-plugin-fieldwidget",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:imageeffect",
+                "description": "Genera un plugin de efecto de imagen.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descripci\u00f3n del plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.imageeffect",
+                "dashed": "generate-plugin-imageeffect",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:imageformatter",
+                "description": "Genera plugins de formateador de imagen.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.imageformatter",
+                "dashed": "generate-plugin-imageformatter",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:mail",
+                "description": "Genera un plugin de correo",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase para el plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.mail",
+                "dashed": "generate-plugin-mail",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:rest:resource",
+                "description": "Genera un plugin de recurso rest",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin de recurso rest"
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "commands.generate.service.options.name"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin de recurso rest"
+                    },
+                    "plugin-label": {
+                        "name": "plugin-label",
+                        "description": "Etiqueta del plugin de recurso rest"
+                    },
+                    "plugin-url": {
+                        "name": "plugin-url",
+                        "description": "URL del plugin de recurso rest"
+                    },
+                    "plugin-states": {
+                        "name": "plugin-states",
+                        "description": "Estados del plugin de recurso rest"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.rest.resource",
+                "dashed": "generate-plugin-rest-resource",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:rulesaction",
+                "description": "Genera un plugin de acci\u00f3n de rules",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de clase del plugin"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del plugin"
+                    },
+                    "plugin-id": {
+                        "name": "plugin-id",
+                        "description": "ID del plugin"
+                    },
+                    "type": {
+                        "name": "type",
+                        "description": "Tipo de acci\u00f3n (usuario o nodo)"
+                    },
+                    "category": {
+                        "name": "category",
+                        "description": "Categor\u00eda del plugin"
+                    },
+                    "context": {
+                        "name": "context",
+                        "description": "Contexto del plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.rulesaction",
+                "dashed": "generate-plugin-rulesaction",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:type:annotation",
+                "description": "Genera un tipo de plugin con descubrimiento de anotaciones",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del tipo de plugin"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "commands.generate.plugin.type.annotation.options.plugin-id"
+                    },
+                    "label": {
+                        "name": "label",
+                        "description": "Etiqueta del tipo de plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.type.annotation",
+                "dashed": "generate-plugin-type-annotation",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:type:yaml",
+                "description": "Genera un tipo de plugin con descubrimiento YAML",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del tipo de plugin"
+                    },
+                    "plugin-name": {
+                        "name": "plugin-name",
+                        "description": "Nombre m\u00e1quina del tipo de plugin"
+                    },
+                    "plugin-file-name": {
+                        "name": "plugin-file-name",
+                        "description": "Nombre del archivo del plugin"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.type.yaml",
+                "dashed": "generate-plugin-type-yaml",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:plugin:views:field",
+                "description": "Genera un plugin de campo de vista personalizado.",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase del plugin de campo de vista"
+                    },
+                    "title": {
+                        "name": "title",
+                        "description": "Views plugin field title T\u00edtulo del plugin de campo de vista"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descripci\u00f3n del plugin de campo de vista"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.plugin.views.field",
+                "dashed": "generate-plugin-views-field",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:profile",
+                "description": "Genera un perfil.",
+                "options": {
+                    "profile": {
+                        "name": "profile",
+                        "description": "Nombre del perfil"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "Nombre-m\u00e1quina (s\u00f3lo min\u00fasculas y guiones bajos)"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descripci\u00f3n del perfil"
+                    },
+                    "core": {
+                        "name": "core",
+                        "description": "Versi\u00f3n del core"
+                    },
+                    "dependencies": {
+                        "name": "dependencies",
+                        "description": "Dependencias de m\u00f3dulos separadas por comas (p. ej. context, panels)"
+                    },
+                    "distribution": {
+                        "name": "distribution",
+                        "description": "Nombre de la distribuci\u00f3n"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.profile",
+                "dashed": "generate-profile",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:routesubscriber",
+                "description": "Generar un RouteSubscriber",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "Nombre del servicio"
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "generate.routesubscriber",
+                "dashed": "generate-routesubscriber",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:service",
+                "description": "Genera un servicio",
+                "options": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "name": {
+                        "name": "name",
+                        "description": "commands.generate.service.options.name"
+                    },
+                    "class": {
+                        "name": "class",
+                        "description": "Nombre de la clase"
+                    },
+                    "interface": {
+                        "name": "interface",
+                        "description": "commands.common.service.options.interface"
+                    },
+                    "services": {
+                        "name": "services",
+                        "description": "Cargar servicios desde el contenedor."
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gs"
+                ],
+                "key": "generate.service",
+                "dashed": "generate-service",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "generate:theme",
+                "description": "Genera un tema.",
+                "options": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.generate.theme.options.module"
+                    },
+                    "machine-name": {
+                        "name": "machine-name",
+                        "description": "Nombre m\u00e1quina (s\u00f3lo min\u00fasculas y gui\u00f3n bajo)"
+                    },
+                    "theme-path": {
+                        "name": "theme-path",
+                        "description": "commands.generate.theme.options.module-path"
+                    },
+                    "description": {
+                        "name": "description",
+                        "description": "Descripci\u00f3n del tema"
+                    },
+                    "core": {
+                        "name": "core",
+                        "description": "Versi\u00f3n del core"
+                    },
+                    "package": {
+                        "name": "package",
+                        "description": "Paquete del tema"
+                    },
+                    "global-library": {
+                        "name": "global-library",
+                        "description": "Nombre de la librer\u00eda de estilo global"
+                    },
+                    "base-theme": {
+                        "name": "base-theme",
+                        "description": "Tema base (por ejemplo: classy, stable)"
+                    },
+                    "regions": {
+                        "name": "regions",
+                        "description": "Regiones"
+                    },
+                    "breakpoints": {
+                        "name": "breakpoints",
+                        "description": "Puntos de ruptura"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "gt"
+                ],
+                "key": "generate.theme",
+                "dashed": "generate-theme",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "image": [
+            {
+                "name": "image:styles:debug",
+                "description": "Lista los estilos de im\u00e1genes del sitio",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "image.styles.debug",
+                "dashed": "image-styles-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "image:styles:flush",
+                "description": "Ejecutar la funci\u00f3n limpieza por cada uno o por todos los estilos de im\u00e1genes",
+                "options": [],
+                "arguments": {
+                    "styles": {
+                        "name": "styles",
+                        "description": "Nombre del estilo de imagen."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "image.styles.flush",
+                "dashed": "image-styles-flush",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "locale": [
+            {
+                "name": "locale:language:add",
+                "description": "A\u00f1adir un idioma que sea soportado en el sitio",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma por ejemplo es o Espa\u00f1ol"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "locale.language.add",
+                "dashed": "locale-language-add",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "locale:language:delete",
+                "description": "Eliminar un idioma soportado en el sitio",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma por ejemplo es o Espa\u00f1ol"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "locale.language.delete",
+                "dashed": "locale-language-delete",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "locale:translation:status",
+                "description": "Lista de traducciones disponibles actualizadas",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma por ejemplo es o Espa\u00f1ol"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "locale.translation.status",
+                "dashed": "locale-translation-status",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "migrate": [
+            {
+                "name": "migrate:debug",
+                "description": "Muestra la migraci\u00f3n actual disponible para la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "tag": {
+                        "name": "tag",
+                        "description": "Etiqueta de migraci\u00f3n"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "mid"
+                ],
+                "key": "migrate.debug",
+                "dashed": "migrate-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "migrate:execute",
+                "description": "Ejecuta una migraci\u00f3n que est\u00e9 disponible para la aplicaci\u00f3n",
+                "options": {
+                    "site-url": {
+                        "name": "site-url",
+                        "description": "URL fuente del sitio"
+                    },
+                    "db-type": {
+                        "name": "db-type",
+                        "description": "commands.migrate.setup.migrations.options.db-type"
+                    },
+                    "db-host": {
+                        "name": "db-host",
+                        "description": "Host de la base de datos"
+                    },
+                    "db-name": {
+                        "name": "db-name",
+                        "description": "Nombre de la base de datos"
+                    },
+                    "db-user": {
+                        "name": "db-user",
+                        "description": "Usuario de la base de datos"
+                    },
+                    "db-pass": {
+                        "name": "db-pass",
+                        "description": "Contrase\u00f1a de la base de datos"
+                    },
+                    "db-prefix": {
+                        "name": "db-prefix",
+                        "description": "Prefijo de la base de datos"
+                    },
+                    "db-port": {
+                        "name": "db-port",
+                        "description": "Puerto de la base de datos"
+                    },
+                    "exclude": {
+                        "name": "exclude",
+                        "description": "Excluir los siguientes IDs de migraci\u00f3n"
+                    }
+                },
+                "arguments": {
+                    "migration-ids": {
+                        "name": "migration-ids",
+                        "description": "ID de migraci\u00f3n"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "mie"
+                ],
+                "key": "migrate.execute",
+                "dashed": "migrate-execute",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "migrate:setup",
+                "description": "Cargar y crear las migraciones pertinentes para una base de datos heredada",
+                "options": {
+                    "db-type": {
+                        "name": "db-type",
+                        "description": "Tipo de base de datos de Drupal"
+                    },
+                    "db-host": {
+                        "name": "db-host",
+                        "description": "\"Host\" de base de datos"
+                    },
+                    "db-name": {
+                        "name": "db-name",
+                        "description": "Nombre de base de datos"
+                    },
+                    "db-user": {
+                        "name": "db-user",
+                        "description": "Usuario de base de datos"
+                    },
+                    "db-pass": {
+                        "name": "db-pass",
+                        "description": "Contrase\u00f1a de base de datos"
+                    },
+                    "db-prefix": {
+                        "name": "db-prefix",
+                        "description": "Prefijo de base de datos"
+                    },
+                    "db-port": {
+                        "name": "db-port",
+                        "description": "Puerto"
+                    },
+                    "files-directory": {
+                        "name": "files-directory",
+                        "description": "Directorio de archivos"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "migrate.setup",
+                "dashed": "migrate-setup",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "module": [
+            {
+                "name": "module:debug",
+                "description": "Muestra los m\u00f3dulos actualmente disponibles para la aplicaci\u00f3n",
+                "options": {
+                    "status": {
+                        "name": "status",
+                        "description": "Estado del m\u00f3dulo [habilitado|deshabilitado]"
+                    },
+                    "type": {
+                        "name": "type",
+                        "description": "Tipo de m\u00f3dulo [core|no-core]"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "module.debug",
+                "dashed": "module-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "module:download",
+                "description": "Descarga un m\u00f3dulo o varios en la aplicaci\u00f3n",
+                "options": {
+                    "latest": {
+                        "name": "latest",
+                        "description": "Valor por defecto que descarga la versi\u00f3n m\u00e1s reciente"
+                    }
+                },
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "El m\u00f3dulo o los m\u00f3dulos que vayan a ser habilitados deben ir separados por un espacio"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "md"
+                ],
+                "key": "module.download",
+                "dashed": "module-download",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "module:install",
+                "description": "Instala un m\u00f3dulo o varios en la aplicaci\u00f3n",
+                "options": {
+                    "latest": {
+                        "name": "latest",
+                        "description": "Por defecto descarga la versi\u00f3n m\u00e1s reciente"
+                    }
+                },
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "El m\u00f3dulo o los m\u00f3dulos que vayan a ser habilitados deben ir separados por un espacio"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "module.install",
+                "dashed": "module-install",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "module:uninstall",
+                "description": "Desinstala un m\u00f3dulo o varios en la aplicaci\u00f3n",
+                "options": {
+                    "force": {
+                        "name": "force",
+                        "description": "Do you want to ignore dependencies and forcefully uninstall the module?"
+                    }
+                },
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Los m\u00f3dulos a ser desinstalado(s) deben ser separados por una coma"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "module.uninstall",
+                "dashed": "module-uninstall",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "multisite": [
+            {
+                "name": "multisite:debug",
+                "description": "Lista todos los sitios m\u00faltiples disponibles en el sistema",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "multisite.debug",
+                "dashed": "multisite-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "node": [
+            {
+                "name": "node:access:rebuild",
+                "description": "Reconstruir los permisos de acceso a nodos. La reconstrucci\u00f3n eliminar\u00e1 todos los privilegios al contenudo y los reemplazar\u00e1 con permisos basado en los m\u00f3dulos y configuraci\u00f3n actual,",
+                "options": {
+                    "batch": {
+                        "name": "batch",
+                        "description": "Procesar en modo batch."
+                    }
+                },
+                "arguments": [],
+                "examples": [
+                    {
+                        "description": "Reconstruir los permisos de acceso a nodos",
+                        "execution": "drupal node:access:rebuild --batch"
+                    }
+                ],
+                "aliases": [],
+                "key": "node.access.rebuild",
+                "dashed": "node-access-rebuild",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "plugin": [
+            {
+                "name": "plugin:debug",
+                "description": "commands.plugin.debug.description",
+                "options": [],
+                "arguments": {
+                    "type": {
+                        "name": "type",
+                        "description": "commands.plugin.debug.arguments.type"
+                    },
+                    "id": {
+                        "name": "id",
+                        "description": "commands.plugin.debug.arguments.id"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "plugin.debug",
+                "dashed": "plugin-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "rest": [
+            {
+                "name": "rest:debug",
+                "description": "Muestra el actual recurso rest para la aplicaci\u00f3n",
+                "options": {
+                    "authorization": {
+                        "name": "authorization",
+                        "description": "Estado del recuros rest habilitado | deshabilitado"
+                    }
+                },
+                "arguments": {
+                    "resource-id": {
+                        "name": "resource-id",
+                        "description": "ID de recurso rest"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "rede"
+                ],
+                "key": "rest.debug",
+                "dashed": "rest-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "rest:disable",
+                "description": "Deshabilita un recurso rest en la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "resource-id": {
+                        "name": "resource-id",
+                        "description": "ID de recurso rest"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "redi"
+                ],
+                "key": "rest.disable",
+                "dashed": "rest-disable",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "rest:enable",
+                "description": "Habilita un recurso rest para la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "resource-id": {
+                        "name": "resource-id",
+                        "description": "ID de recurso rest"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ree"
+                ],
+                "key": "rest.enable",
+                "dashed": "rest-enable",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "router": [
+            {
+                "name": "router:debug",
+                "description": "Muestra las rutas actuales de la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "route-name": {
+                        "name": "route-name",
+                        "description": "Nombres de ruta"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "rod"
+                ],
+                "key": "router.debug",
+                "dashed": "router-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "router:rebuild",
+                "description": "Reconstruye las rutas de la aplicaci\u00f3n",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ror"
+                ],
+                "key": "router.rebuild",
+                "dashed": "router-rebuild",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "settings": [
+            {
+                "name": "settings:debug",
+                "description": "Ofrece un listado de la configuraci\u00f3n de usuario de Drupal Console.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "settings.debug",
+                "dashed": "settings-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "settings:set",
+                "description": "Cambia un valor de configuraci\u00f3n espec\u00edfico en el archivo de configuraci\u00f3n de DrupalConsole",
+                "options": [],
+                "arguments": {
+                    "setting-name": {
+                        "name": "setting-name",
+                        "description": "Dispone un nombre para un valor en formato YAML en el archivo de configuraci\u00f3n de Drupal Console"
+                    },
+                    "setting-value": {
+                        "name": "setting-value",
+                        "description": "Dispone un valor en el archivo de configuraci\u00f3n de Drupal Console"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "settings.set",
+                "dashed": "settings-set",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "site": [
+            {
+                "name": "site:debug",
+                "description": "Enlista todos los sitios, locales y remotos, conocidos.",
+                "options": [],
+                "arguments": {
+                    "target": {
+                        "name": "target",
+                        "description": "commands.site.debug.options.target"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "sd"
+                ],
+                "key": "site.debug",
+                "dashed": "site-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:import:local",
+                "description": "Import\/Configure an existing local Drupal project",
+                "options": {
+                    "environment": {
+                        "name": "environment",
+                        "description": "Name of the environment that is going to be imported"
+                    }
+                },
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Name that will be used to generate the site config"
+                    },
+                    "directory": {
+                        "name": "directory",
+                        "description": "Existing Drupal root directory"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "site.import.local",
+                "dashed": "site-import-local",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:install",
+                "description": "Instala un proyecto Drupal",
+                "options": {
+                    "langcode": {
+                        "name": "langcode",
+                        "description": "Idioma"
+                    },
+                    "db-type": {
+                        "name": "db-type",
+                        "description": "Tipo de base de datos"
+                    },
+                    "db-file": {
+                        "name": "db-file",
+                        "description": "Archivo de base de datos de Drupal a usar en la instalaci\u00f3n"
+                    },
+                    "db-host": {
+                        "name": "db-host",
+                        "description": "Host de la base de datos"
+                    },
+                    "db-name": {
+                        "name": "db-name",
+                        "description": "Nombre de la base de datos"
+                    },
+                    "db-user": {
+                        "name": "db-user",
+                        "description": "Usuario de la base de datos"
+                    },
+                    "db-pass": {
+                        "name": "db-pass",
+                        "description": "Contrase\u00f1a de la base de datos"
+                    },
+                    "db-prefix": {
+                        "name": "db-prefix",
+                        "description": "Prefijo de la base de datos"
+                    },
+                    "db-port": {
+                        "name": "db-port",
+                        "description": "Puerto de la base de datos"
+                    },
+                    "site-name": {
+                        "name": "site-name",
+                        "description": "Nombre del sitio"
+                    },
+                    "site-mail": {
+                        "name": "site-mail",
+                        "description": "Direcci\u00f3n de correo electr\u00f3nico del sitio"
+                    },
+                    "account-name": {
+                        "name": "account-name",
+                        "description": "Nombre de la cuenta de administrador"
+                    },
+                    "account-mail": {
+                        "name": "account-mail",
+                        "description": "Correo electr\u00f3nico de la cuenta de administrador"
+                    },
+                    "account-pass": {
+                        "name": "account-pass",
+                        "description": "Contrase\u00f1a de la cuenta de administrador"
+                    }
+                },
+                "arguments": {
+                    "profile": {
+                        "name": "profile",
+                        "description": "Perfil de Drupal que ser\u00e1 instalado"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "si"
+                ],
+                "key": "site.install",
+                "dashed": "site-install",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:maintenance",
+                "description": "Poner el sitio en modo mantenimiento",
+                "options": [],
+                "arguments": {
+                    "mode": {
+                        "name": "mode",
+                        "description": "Modo mantenimiento del sitio[on\/off]"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "sma"
+                ],
+                "key": "site.maintenance",
+                "dashed": "site-maintenance",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:mode",
+                "description": "Cambiar la configuraci\u00f3n de rendimiento del sistema",
+                "options": [],
+                "arguments": {
+                    "environment": {
+                        "name": "environment",
+                        "description": "Nombre de entorno"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "smo"
+                ],
+                "key": "site.mode",
+                "dashed": "site-mode",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:new",
+                "description": "Crea un nuevo proyecto Drupal",
+                "options": [],
+                "arguments": {
+                    "directory": {
+                        "name": "directory",
+                        "description": "Directorio donde instalar Drupal"
+                    },
+                    "version": {
+                        "name": "version",
+                        "description": "Versi\u00f3n espec\u00edfica de Drupal a descargar"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "sn"
+                ],
+                "key": "site.new",
+                "dashed": "site-new",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:statistics",
+                "description": "Muestra las estad\u00edsticas actuales del sitio web.",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "site.statistics",
+                "dashed": "site-statistics",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "site:status",
+                "description": "Ver el estatus de la instalaci\u00f3n actual de Drupal",
+                "options": {
+                    "format": {
+                        "name": "format",
+                        "description": "commands.site.status.options.format"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "ss"
+                ],
+                "key": "site.status",
+                "dashed": "site-status",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "state": [
+            {
+                "name": "state:debug",
+                "description": "Muestra las claves de Estado actual.",
+                "options": [],
+                "arguments": {
+                    "key": {
+                        "name": "key",
+                        "description": "La clave de Estado para depurar."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "state.debug",
+                "dashed": "state-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "state:delete",
+                "description": "Eliminar Estado",
+                "options": [],
+                "arguments": {
+                    "name": {
+                        "name": "name",
+                        "description": "Nombre del Estado."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "state.delete",
+                "dashed": "state-delete",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "state:override",
+                "description": "Sobreescribir una clave de Estado.",
+                "options": [],
+                "arguments": {
+                    "key": {
+                        "name": "key",
+                        "description": "La clave de Estado que ser\u00e1 sobreescrita."
+                    },
+                    "value": {
+                        "name": "value",
+                        "description": "El valor de Estado a establecer."
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "state.override",
+                "dashed": "state-override",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "test": [
+            {
+                "name": "test:debug",
+                "description": "Lista los tests unitarios disponibles para la aplicaci\u00f3n.",
+                "options": {
+                    "test-class": {
+                        "name": "test-class",
+                        "description": "Clase del test"
+                    }
+                },
+                "arguments": {
+                    "group": {
+                        "name": "group",
+                        "description": "Grupo"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "td"
+                ],
+                "key": "test.debug",
+                "dashed": "test-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "test:run",
+                "description": "Ejecuta un test unitario de los disponibles en la aplicaci\u00f3n",
+                "options": {
+                    "url": {
+                        "name": "url",
+                        "description": "commands.test.run.arguments.url"
+                    }
+                },
+                "arguments": {
+                    "test-class": {
+                        "name": "test-class",
+                        "description": "Clase del test"
+                    },
+                    "test-methods": {
+                        "name": "test-methods",
+                        "description": "M\u00e9todos de prueba a ejecutar"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "tr"
+                ],
+                "key": "test.run",
+                "dashed": "test-run",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "theme": [
+            {
+                "name": "theme:debug",
+                "description": "Despliega los temas actuales para la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "Tema espec\u00edfico a depurar "
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "tde"
+                ],
+                "key": "theme.debug",
+                "dashed": "theme-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "theme:download",
+                "description": "Descarga un tema para la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.theme.download.options.theme"
+                    },
+                    "version": {
+                        "name": "version",
+                        "description": "Versi\u00f3n del tema, por ejemplo, 1.x-dev"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "td"
+                ],
+                "key": "theme.download",
+                "dashed": "theme-download",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "theme:install",
+                "description": "Instalar tema o temas en la aplicaci\u00f3n",
+                "options": {
+                    "set-default": {
+                        "name": "set-default",
+                        "description": "Establecer como tema por defecto"
+                    }
+                },
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.theme.install.options.module"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ti"
+                ],
+                "key": "theme.install",
+                "dashed": "theme-install",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "theme:uninstall",
+                "description": "Desinstalar tema o temas en la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "theme": {
+                        "name": "theme",
+                        "description": "commands.theme.uninstall.options.module"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "tu"
+                ],
+                "key": "theme.uninstall",
+                "dashed": "theme-uninstall",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "translation": [
+            {
+                "name": "translation:cleanup",
+                "description": "Ficheros de limpieza de traducci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma al que hacer limpieza de sus ficheros contra el ingl\u00e9s"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.cleanup",
+                "dashed": "translation-cleanup",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "translation:pending",
+                "description": "Determina cadenas de traducci\u00f3n pendientes en un idioma o en un archivo espec\u00edfico de un idioma",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "Archivo espec\u00edfico con el que determinar las traducciones pendientes contra el ingl\u00e9s"
+                    }
+                },
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma a determinar sus traducciones pendientes contra el ingl\u00e9s"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.pending",
+                "dashed": "translation-pending",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "translation:stats",
+                "description": "Genera estad\u00edsticas de traducci\u00f3n",
+                "options": {
+                    "format": {
+                        "name": "format",
+                        "description": "Define el formato de salida ( table|markdown )"
+                    }
+                },
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma para generar estad\u00edsticas de traducci\u00f3n contra el ingl\u00e9s"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.stats",
+                "dashed": "translation-stats",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "translation:sync",
+                "description": "Sincronizar archivos de traducci\u00f3n",
+                "options": {
+                    "file": {
+                        "name": "file",
+                        "description": "commands.translation.stats.options.file"
+                    }
+                },
+                "arguments": {
+                    "language": {
+                        "name": "language",
+                        "description": "Idioma cuyos ficheros se sincronizar\u00e1n contra el ingl\u00e9s"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "translation.sync",
+                "dashed": "translation-sync",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "update": [
+            {
+                "name": "update:debug",
+                "description": "Muestra las actualizaciones actualmente disponibles para la aplicaci\u00f3n",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [
+                    "upd"
+                ],
+                "key": "update.debug",
+                "dashed": "update-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "update:entities",
+                "description": "Aplicar actualizaciones a entidades",
+                "options": [],
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "update.entities",
+                "dashed": "update-entities",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "update:execute",
+                "description": "Ejecuta una funci\u00f3n espec\u00edfica de Actualizar N dentro de un m\u00f3dulo, o ejecutarlos todos",
+                "options": [],
+                "arguments": {
+                    "module": {
+                        "name": "module",
+                        "description": "Nombre del m\u00f3dulo."
+                    },
+                    "update-n": {
+                        "name": "update-n",
+                        "description": "Funci\u00f3n espec\u00edfica de Actualizar N que ser\u00e1 ejecutada"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "upe"
+                ],
+                "key": "update.execute",
+                "dashed": "update-execute",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "user": [
+            {
+                "name": "user:debug",
+                "description": "Muestra los usuarios actuales del sitio",
+                "options": {
+                    "roles": {
+                        "name": "roles",
+                        "description": "Indique los roles con los que filtrar el listado de usuarios"
+                    },
+                    "limit": {
+                        "name": "limit",
+                        "description": "Cu\u00e1ntos usuarios le gustar\u00eda listar"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "user.debug",
+                "dashed": "user-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "user:delete",
+                "description": "Eliminar usuarios del sitio",
+                "options": {
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "Id de usuario que ser\u00e1 eliminado"
+                    },
+                    "roles": {
+                        "name": "roles",
+                        "description": "Roles asociados a los usuarios que ser\u00e1n eliminados"
+                    }
+                },
+                "arguments": [],
+                "examples": [],
+                "aliases": [],
+                "key": "user.delete",
+                "dashed": "user-delete",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "user:login:clear:attempts",
+                "description": "Limpia intentos de inicio de sesi\u00f3n fallidos para una cuenta.",
+                "options": [],
+                "arguments": {
+                    "uid": {
+                        "name": "uid",
+                        "description": "Id de usuario."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "uslca"
+                ],
+                "key": "user.login.clear.attempts",
+                "dashed": "user-login-clear-attempts",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "user:login:url",
+                "description": "Crea una url de login de usuario de uso \u00fanico.",
+                "options": [],
+                "arguments": {
+                    "user-id": {
+                        "name": "user-id",
+                        "description": "Id de usuario."
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "uslu"
+                ],
+                "key": "user.login.url",
+                "dashed": "user-login-url",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "user:password:hash",
+                "description": "Crea un hash a partir de una contrase\u00f1a en texto plano.",
+                "options": [],
+                "arguments": {
+                    "password": {
+                        "name": "password",
+                        "description": "Contrase\u00f1a(s) en formato texto"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "usph"
+                ],
+                "key": "user.password.hash",
+                "dashed": "user-password-hash",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "user:password:reset",
+                "description": "Restablece la contrase\u00f1a de un usuario espec\u00edfico.",
+                "options": [],
+                "arguments": {
+                    "user": {
+                        "name": "user",
+                        "description": "ID de usuario"
+                    },
+                    "password": {
+                        "name": "password",
+                        "description": "Contrase\u00f1a en formato de texto"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "uspr"
+                ],
+                "key": "user.password.reset",
+                "dashed": "user-password-reset",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "views": [
+            {
+                "name": "views:debug",
+                "description": "Muestra los recursos actuales de vistas para la aplicaci\u00f3n",
+                "options": {
+                    "tag": {
+                        "name": "tag",
+                        "description": "Etiqueta de la vista"
+                    },
+                    "status": {
+                        "name": "status",
+                        "description": "Estado de la vista (Habilitado|Deshabilitado)"
+                    }
+                },
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID de la vista"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "vde"
+                ],
+                "key": "views.debug",
+                "dashed": "views-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "views:disable",
+                "description": "Deshabilita una vista",
+                "options": [],
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID de la vista"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "vdi"
+                ],
+                "key": "views.disable",
+                "dashed": "views-disable",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "views:enable",
+                "description": "Habilita una vista",
+                "options": [],
+                "arguments": {
+                    "view-id": {
+                        "name": "view-id",
+                        "description": "ID de la vista"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ve"
+                ],
+                "key": "views.enable",
+                "dashed": "views-enable",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "views:plugins:debug",
+                "description": "Mostrar los plugins de views en la aplicaci\u00f3n",
+                "options": [],
+                "arguments": {
+                    "type": {
+                        "name": "type",
+                        "description": "Filtrar plugins de views por tipo"
+                    }
+                },
+                "examples": [],
+                "aliases": [],
+                "key": "views.plugins.debug",
+                "dashed": "views-plugins-debug",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ],
+        "yaml": [
+            {
+                "name": "yaml:diff",
+                "description": "Compara dos archivos YAML para encontrar las diferencias entre ambos",
+                "options": {
+                    "stats": {
+                        "name": "stats",
+                        "description": "Despliega estad\u00edsticas acerca de la comparaci\u00f3n de archivos YAML"
+                    },
+                    "negate": {
+                        "name": "negate",
+                        "description": "Definir el modo de la comparaci\u00f3n (diferencia o igualdad), valores posibles son TRUE\/FALSE o 0\/1"
+                    },
+                    "limit": {
+                        "name": "limit",
+                        "description": "Limitar resultados a un n\u00famero espec\u00edfico"
+                    },
+                    "offset": {
+                        "name": "offset",
+                        "description": "Punto de empiece del l\u00edmite"
+                    }
+                },
+                "arguments": {
+                    "yaml-left": {
+                        "name": "yaml-left",
+                        "description": "Fichero YAML base para comparar"
+                    },
+                    "yaml-right": {
+                        "name": "yaml-right",
+                        "description": "Fichero YAML en el que determinar carencias o diferencias comparado con el archivo base YAML"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "yd"
+                ],
+                "key": "yaml.diff",
+                "dashed": "yaml-diff",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "yaml:merge",
+                "description": "Combinar uno o m\u00e1s archivos de YAML en un nuevo archivo YAML. Se conservar\u00e1n los valores del archivo m\u00e1s a la izquierda del merge.",
+                "options": [],
+                "arguments": {
+                    "yaml-destination": {
+                        "name": "yaml-destination",
+                        "description": "Ruta para el nuevo archivo YAML que almacenar\u00e1 la combinaci\u00f3n"
+                    },
+                    "yaml-files": {
+                        "name": "yaml-files",
+                        "description": "Ruta de archivos de YAML para combinar"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ym"
+                ],
+                "key": "yaml.merge",
+                "dashed": "yaml-merge",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "yaml:split",
+                "description": "Divide un archivo YAML usando la indentaci\u00f3n como criterio de separaci\u00f3n",
+                "options": {
+                    "indent-level": {
+                        "name": "indent-level",
+                        "description": "Dividir archivo YAML usando un nivel espec\u00edfico de indentaci\u00f3n"
+                    },
+                    "file-output-prefix": {
+                        "name": "file-output-prefix",
+                        "description": "commands.yaml.split.options.file-output-prefix"
+                    },
+                    "file-output-suffix": {
+                        "name": "file-output-suffix",
+                        "description": "commands.yaml.split.options.file-output-suffix"
+                    },
+                    "starting-key": {
+                        "name": "starting-key",
+                        "description": "La clave YAML desde donde se empezar\u00e1 a extraer los elementos parciales"
+                    },
+                    "exclude-parents-key": {
+                        "name": "exclude-parents-key",
+                        "description": "Excluir claves padre en el nombre del archivo generado"
+                    }
+                },
+                "arguments": {
+                    "yaml-file": {
+                        "name": "yaml-file",
+                        "description": "commands.yaml.split.value.arguments.yaml-file"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "ys"
+                ],
+                "key": "yaml.split",
+                "dashed": "yaml-split",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "yaml:update:key",
+                "description": "Reemplaza una clave en un archivo YAML.",
+                "options": [],
+                "arguments": {
+                    "yaml-file": {
+                        "name": "yaml-file",
+                        "description": "Ruta del archivo YAML que ser\u00e1 actualizado"
+                    },
+                    "yaml-key": {
+                        "name": "yaml-key",
+                        "description": "Clave YAML a actualizar"
+                    },
+                    "yaml-new-key": {
+                        "name": "yaml-new-key",
+                        "description": "commands.yaml.update.value.arguments.yaml-new-key"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "yu"
+                ],
+                "key": "yaml.update.key",
+                "dashed": "yaml-update-key",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            },
+            {
+                "name": "yaml:update:value",
+                "description": "Actualiza un valor de una clave espec\u00edfica en un archivo YAML.",
+                "options": [],
+                "arguments": {
+                    "yaml-file": {
+                        "name": "yaml-file",
+                        "description": "Ruta del archivo YAML que ser\u00e1 actualizado"
+                    },
+                    "yaml-key": {
+                        "name": "yaml-key",
+                        "description": "Clave YAML a actualizar"
+                    },
+                    "yaml-value": {
+                        "name": "yaml-value",
+                        "description": "Valor YAML a actualizar"
+                    }
+                },
+                "examples": [],
+                "aliases": [
+                    "yuv"
+                ],
+                "key": "yaml.update.value",
+                "dashed": "yaml-update-value",
+                "messages": {
+                    "usage": "Uso",
+                    "options": "Opciones disponibles",
+                    "option": "Opci\u00f3n",
+                    "details": "Detalles",
+                    "arguments": "Argumentos disponibles",
+                    "argument": "Argumento",
+                    "examples": "Ejemplos"
+                }
+            }
+        ]
+    },
+    "application": {
+        "namespaces": [
+            "none",
+            "cache",
+            "chain",
+            "config",
+            "container",
+            "create",
+            "cron",
+            "database",
+            "generate",
+            "image",
+            "locale",
+            "migrate",
+            "module",
+            "multisite",
+            "node",
+            "plugin",
+            "rest",
+            "router",
+            "settings",
+            "site",
+            "state",
+            "test",
+            "theme",
+            "translation",
+            "update",
+            "user",
+            "views",
+            "yaml"
+        ],
+        "options": [
+            {
+                "name": "help",
+                "description": "Muestra este mensaje de ayuda"
+            },
+            {
+                "name": "quiet",
+                "description": "No mostrar ning\u00fan mensaje"
+            },
+            {
+                "name": "verbose",
+                "description": "Aumenta la verbosidad de los mensajes: 1 para la salida normal, 2 para mayor verbosidad y 3 para depurar"
+            },
+            {
+                "name": "version",
+                "description": "<info>%s<\/info> versi\u00f3n <comment>%s<\/comment>"
+            },
+            {
+                "name": "ansi",
+                "description": "Forzar salida ANSI"
+            },
+            {
+                "name": "no-ansi",
+                "description": "Deshabilitar salida ANSI"
+            },
+            {
+                "name": "no-interaction",
+                "description": "No hacer ningura pregunta interactiva"
+            },
+            {
+                "name": "env",
+                "description": "Nombre del ambiente."
+            },
+            {
+                "name": "root",
+                "description": "Define la ra\u00edz de Drupal que se utilizar\u00e1 en la ejecuci\u00f3n de los comandos"
+            },
+            {
+                "name": "no-debug",
+                "description": "Desactivar el modo de depuraci\u00f3n."
+            },
+            {
+                "name": "learning",
+                "description": "Generar c\u00f3digo con explicaciones."
+            },
+            {
+                "name": "generate-chain",
+                "description": "Imprimir opciones y argumentos como YAML para ser usado el comando chain"
+            },
+            {
+                "name": "generate-inline",
+                "description": "Imprimir opciones y argumentos de ejecuci\u00f3n como llamada inline para ser usados en el futuro"
+            },
+            {
+                "name": "generate-doc",
+                "description": "Muestra las opciones del comando y sus argumentos como markdown"
+            },
+            {
+                "name": "target",
+                "description": "Nombre del sitio con el que desea interactuar (sitio remoto o local)"
+            },
+            {
+                "name": "uri",
+                "description": "URI del sitio en Drupal que se usar\u00e1 (para ambientes en multi-site o cuando esta usando un puerto alternativo)"
+            },
+            {
+                "name": "yes",
+                "description": "Saltar confirmaci\u00f3n y ejecutar directamente"
+            }
+        ],
+        "arguments": [
+            {
+                "name": "command",
+                "description": "El comando a ejecutar"
+            }
+        ],
+        "languages": {
+            "en": "English",
+            "es": "Espa\u00f1ol",
+            "ca": "Catal\u00e0",
+            "fr": "Fran\u00e7ais",
+            "gu": "\u0a97\u0ac1\u0a9c\u0ab0\u0abe\u0aa4",
+            "ko": "\ud55c\uad6d\uc5b4",
+            "hi": "\u0939\u093f\u0928\u094d\u0926\u0940",
+            "hu": "Magyar",
+            "id": "Bahasa Indonesia",
+            "ja": "\u65e5\u672c\u8a9e",
+            "mr": "\u092e\u0930\u093e\u0920\u0940",
+            "pa": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+            "pt_br": "Portugu\u00eas",
+            "ro": "Romanian",
+            "ru": "p\u0443\u0441\u0441\u043a\u0438\u0439 \u044f\u0437\u044b\u043a",
+            "tl": "Tagalog",
+            "vn": "Ti\u1ebfng Vi\u1ec7t",
+            "zh_hans": "\u7b80\u4f53\u4e2d\u6587"
+        },
+        "messages": {
+            "title": "Comandos Drupal Console disponibles",
+            "note": "Nota",
+            "note_description": "Comandos de Drupal Console que *deben* ser ejecutados desde una instalaci\u00f3n de Drupal 8",
+            "command": "Comando de Drupal Console",
+            "options": "Opciones disponibles",
+            "option": "Opci\u00f3n",
+            "details": "Detalles",
+            "arguments": "Argumentos disponibles",
+            "argument": "Argumento",
+            "examples": "Ejemplos"
+        },
+        "examples": []
+    }
+}
