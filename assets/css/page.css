@@ -2,7 +2,7 @@
  * Origin
  */
 body {
-  background: #333;
+  background: #fff;
   margin-bottom: 40px;
   height: 100%;
   font-size: 16px;
@@ -28,14 +28,14 @@ body {
 }
 #top-button:hover {
   background: #ddd;
-  color: #333;
+  color: #fff;
 }
 
 /**
  * Code Column
  */
 .code-column {
-  background-color: #333;
+  background-color: #fff;
   color: #fff;
   word-wrap: break-word;
 }
@@ -73,14 +73,14 @@ pre {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   padding: 5px;
   font-size: 90%;
-  color: #e9e4e5;
+  color: #333;
   line-height: 1.5em;
   margin: 0.2em 0;
   border: 0;
   white-space: pre-wrap;
 }
 pre .pln {
-  color: #e9e4e5;
+  color: #333;
 }
 pre .str {
   color: #ffa0a0;
@@ -89,7 +89,7 @@ pre .kwd {
   color: #4bb1b1;
 }
 pre .com {
-  color: #87ceeb;
+  color: #0594d3;
   display: block;
 }
 pre .com + .pln {
@@ -141,7 +141,7 @@ pre .prettyprint {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 0;
-  color: #fa503a;
+  color: #0594d3;
   text-align: center;
 }
 button.check-all-button {
@@ -183,19 +183,19 @@ li.social-icon a:hover {
   color: none;
 }
 .sidebar-menu a {
-  color: #ffa0a0;
+  color: #0594d3;
   border-radius: 4px;
-  border: 1px solid #ffa0a0;
+  border: 1px solid #0594d3;
   padding: 2px 4px;
 }
 .sidebar-menu a.active-link {
-  color: #F7332D;
+  color: #0594d3;
 }
 .mobile-cmd-cell a.active-link {
-  color: #F7332D;
+  color: #333;
 }
 .sidebar-menu a:hover {
-  color: #F7332D;
+  color: #0594d3;
 }
 .avatar {
     width: 19px;
@@ -289,7 +289,7 @@ section.cmd-description {
  * Canvas
  */
 .off-canvas.sidebar-canvas {
-  background-color: #333;
+  background-color: #fff;
   overflow-y: visible;
 }
 .off-canvas.sidebar-canvas ul {
