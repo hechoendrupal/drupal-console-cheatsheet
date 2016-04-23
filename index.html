@@ -24,6 +24,9 @@
             </button>
             <ul class="mobile-ofc vertical menu">
               <li>
+                <button  class="hollow button">en</button> | <button>es</button> 
+              </li>
+              <li>
                 <button class="warning hollow button check-all-button">Check All</button>
               </li>
               <li>
@@ -50,17 +53,24 @@
                     <h5 class="sidebar-title">Drupal Console Cheat Sheet</h5>
                     <hr class="horizonal-line">
                     <div class="show-for-medium">
+
+                      <div class="clearfix"></div>
+                      <ul class="sidebar-top languages">
+                      </ul>
+                      <div class="clearfix"></div>
+
                       <button class="warning hollow button check-all-button">Check All</button>
 
                       <div class="clearfix"></div>
                       <ul class="sidebar-menu">
+
                       </ul>
 
                       <div class="clearfix"></div>
 
                       <hr class="horizonal-line">
                     </div>
-                    <!-- <ul class="sidebar-bottom">
+<!--                     <ul class="sidebar-bottom">
                       <li>
                         <a href="https://phphub.org" target="_blank">Laravel Forum</a>
                       </li>
@@ -105,6 +115,12 @@
        </div>
       </div>
 
+      <script type="x-tmpl-mustache" id="language">
+<li class="language">
+  <a onClick="loadCommands('{{language}}')" href="#{{language}}">{{language}}</a>
+</li>
+      </script>
+
       <script type="x-tmpl-mustache" id="command">
 <section class="cmd-description grid-item">
   <h4>
@@ -121,10 +137,6 @@ $ drupal {{name}}
       </script>
       <script type="text/javascript" src="assets/js/jquery.js"></script>
       <script type="text/javascript" src="assets/js/mustache.min.js"></script>
-      <script type="text/javascript" src="assets/js/commands.js"></script>
-      <script type="text/javascript">
-        loadCommands('en');
-      </script>
       <script type="text/javascript" src="assets/js/jquery.highlight-4.js"></script>
       <script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
       <script type="text/javascript" src="assets/js/foundation.min.js"></script>

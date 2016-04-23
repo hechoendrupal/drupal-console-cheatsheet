@@ -1,4 +1,57 @@
 $(function(){
+
+	$.ajaxSetup( { "async": false } );
+
+    loadCommands('en');
+
+	// Initialize foundation, or else!
+	$(document).foundation();
+
+	initExternalLink();
+});
+
+// Read data
+function loadCommands(language) {
+	if(!language) {
+		language = 'en';
+	}
+	$.getJSON( "languages/"+language+".json", function( data ) {
+		var languages = data.application.languages;
+		var namespaces = data.commands;
+		$(".languages").empty();
+		$(".sidebar-menu").empty();
+		$.each(languages, function(key, value) {		
+			var template = document.getElementById('language').innerHTML;
+			var languageLi = Mustache.render(
+			template,
+			{
+				"language": key,
+			});
+			$(languageLi).appendTo(".languages");
+		});
+
+		$(".grid").empty();
+		$.each(namespaces, function(namespace, commands) {
+			renderNamespace(namespace, commands);
+		});
+	});
+
+	initCommands();
+}
+
+function renderNamespace(namespace, commands) {
+	var template = document.getElementById('command').innerHTML;
+	var commandSection = Mustache.render(
+		template,
+		{
+			"namespace": namespace,
+			"commands": commands
+		}
+	);
+	$(commandSection).appendTo(".grid");
+}
+
+function initCommands() {
 	// Allow the user to turn comments off
 	$('.comments-toggle').on('click', function(event){
 		$('span.com').toggle();
@@ -24,7 +77,7 @@ $(function(){
 						$(this).closest('.cmd-description').attr('id', 'cmd-' + name);
 	               return $(this).text();
 			   }
-  }).get();
+	}).get();
 
 	// Reorder sidebar list
 	reorderList($('.sidebar-menu'));
@@ -48,25 +101,6 @@ $(function(){
 	$('.sidebar-menu li a').click(clickSidebarItem);
 	$('.mobile-cmd-cell li a').click(clickSidebarItem);
 
-	function clickSidebarItem() {
-		var name = $(this).attr('data-name');
-		var cmd_id = 'cmd-' + name;
-		$('.focus-code').remove();
-		$('.code-container').append('<section class="cmd-description focus-code">' + $('#' + cmd_id).html() + '</section>');
-		$('.grid').fadeOut('slow');
-		$('.focus-code').fadeIn('slow', function() {
-			window.scrollTo(0, 0);
-		});
-
-		$('.active-link').removeClass('active-link');
-		$(this).addClass('active-link');
-
-		window.location.hash = name;
-
-		$('[data-close]').trigger('click');
-		return false;
-	}
-
 	// Click check all button
 	$('.check-all-button').click(function () {
 		$('.active-link').removeClass('active-link');
@@ -88,25 +122,39 @@ $(function(){
 	if (anchor) {
 			$('[data-name=' + anchor + ']').trigger('click');
 	}
+}
 
-	// Initialize foundation, or else!
-	$(document).foundation();
+function clickSidebarItem() {
+	var name = $(this).attr('data-name');
+	var cmd_id = 'cmd-' + name;
+	$('.focus-code').remove();
+	$('.code-container').append('<section class="cmd-description focus-code">' + $('#' + cmd_id).html() + '</section>');
+	$('.grid').fadeOut('slow');
+	$('.focus-code').fadeIn('slow', function() {
+		window.scrollTo(0, 0);
+	});
 
-	/**
-   * Open External Links In New Window
-   */
-   function initExternalLink(){
-      $('section a[href^="http://"], section a[href^="https://"]').each(function() {
-         var a = new RegExp('/' + window.location.host + '/');
-         if(!a.test(this.href) ) {
-             $(this).click(function(event) {
-                 event.preventDefault();
-                 event.stopPropagation();
-                 window.open(this.href, '_blank');
-             });
-         }
-      });
-  }
+	$('.active-link').removeClass('active-link');
+	$(this).addClass('active-link');
 
-	initExternalLink();
-});
+	window.location.hash = name;
+
+	$('[data-close]').trigger('click');
+	return false;
+}
+
+/**
+ * Open External Links In New Window
+ */
+function initExternalLink(){
+  $('section a[href^="http://"], section a[href^="https://"]').each(function() {
+     var a = new RegExp('/' + window.location.host + '/');
+     if(!a.test(this.href) ) {
+         $(this).click(function(event) {
+             event.preventDefault();
+             event.stopPropagation();
+             window.open(this.href, '_blank');
+         });
+     }
+  });
+}
