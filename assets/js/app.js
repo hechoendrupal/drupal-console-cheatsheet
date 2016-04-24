@@ -2,7 +2,9 @@ $(function(){
 
 	$.ajaxSetup( { "async": false } );
 
-    loadCommands('en');
+	var language = window.location.hash.substr(1);
+
+	loadCommands(language);
 
 	// Initialize foundation, or else!
 	$(document).foundation();
@@ -18,7 +20,8 @@ function loadCommands(language) {
 	$('.focus-code').remove();
 	$('.grid').fadeIn('slow');
 	$('[data-close]').trigger('click');
-	$(".sidebar-menu").empty();
+	$('.sidebar-menu').empty();
+	$('.mobile-cmd-cell').empty();
 	location.hash = '';
 
 	if(!language) {
@@ -78,11 +81,11 @@ function initCommands() {
 	// Get cheat sheet title
 	var h4_array = $('h4 a').map(function(){
 			   if ($(this).text().length > 0) {
-					 	var name = $(this).attr('name');
-						var cmd_cell = '<li><a href="' + $(this).attr('href') + '" data-name="'+ name +'">' + $(this).text() + '</a></li>';
+					var name = $(this).attr('name');
+					var cmd_cell = '<li><a href="' + $(this).attr('href') + '" data-name="'+ name +'">' + $(this).text() + '</a></li>';
 			   		$('.sidebar-menu').append(cmd_cell);
 			   		$('.mobile-cmd-cell').append(cmd_cell);
-						$(this).closest('.cmd-description').attr('id', 'cmd-' + name);
+					$(this).closest('.cmd-description').attr('id', 'cmd-' + name);
 	               return $(this).text();
 			   }
 	}).get();
@@ -106,6 +109,7 @@ function initCommands() {
 	}
 
 	// Show or Hide Command Section
+	$('.sidebar-top li a').click(clickSidebarItem);
 	$('.sidebar-menu li a').click(clickSidebarItem);
 	$('.mobile-cmd-cell li a').click(clickSidebarItem);
 
@@ -128,7 +132,7 @@ function initCommands() {
 	var href = location.href;
 	var anchor = href.split('#')[1];
 	if (anchor) {
-			$('[data-name=' + anchor + ']').trigger('click');
+		$('[data-name=' + anchor + ']').trigger('click');
 	}
 }
 
