@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="@drupalconsole">
         <title>Drupal Console Cheat Sheet</title>
-      	<meta name="description" content="A quick reference guide (cheat sheet) for Drupal Console, listing project commands. We intend to build this Cheat Sheet more assessable and user friendly, you can view it with modern desktop :computer: browser and mobile device :iphone: .">
-      	<meta name="keywords" content="w">
+        <meta name="description" content="A quick reference guide (cheat sheet) for Drupal Console, listing project commands. We intend to build this Cheat Sheet more assessable and user friendly, you can view it with modern desktop :computer: browser and mobile device :iphone: .">
+        <meta name="keywords" content="Drupal, Drupal8, Console, DrupalConsole, CMS, Symfony, Symfony">
         <link rel="stylesheet" href="assets/css/normalize.css" />
         <link rel="stylesheet" href="assets/css/foundation.min.css" />
         <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
@@ -24,7 +24,8 @@
             </button>
             <ul class="mobile-ofc vertical menu">
               <li>
-                <button  class="hollow button">en</button> | <button>es</button> 
+                <ul class="submenu menu vertical mobile-language-top languages" data-submenu>
+                </ul>
               </li>
               <li>
                 <button class="warning hollow button check-all-button">Check All</button>
@@ -55,15 +56,13 @@
                     <div class="show-for-medium">
 
                       <div class="clearfix"></div>
-                      <ul class="sidebar-top languages">
-                      </ul>
+                      <ul class="sidebar-top languages"></ul>
                       <div class="clearfix"></div>
 
                       <button class="warning hollow button check-all-button">Check All</button>
 
                       <div class="clearfix"></div>
                       <ul class="sidebar-menu">
-
                       </ul>
 
                       <div class="clearfix"></div>
@@ -114,7 +113,6 @@
         </div>
        </div>
       </div>
-
       <script type="x-tmpl-mustache" id="language">
 <li class="language">
   <a onClick="loadCommands('{{language}}')" href="#{{language}}">{{language}}</a>
