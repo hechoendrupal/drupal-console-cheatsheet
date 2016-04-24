@@ -10,7 +10,7 @@ http://drupalconsole.com/cheatsheet/
 
 ## ScreenShots
 
-<!-- ![](http://ww3.sinaimg.cn/large/76dc7f1bjw1f2mqhtw9v6j21bs10m7fs.jpg) -->
+![](assets/images/cheatsheet-screenshot.png) 
 
 ## Based on the laravel5-cheatsheet
 
